@@ -1,25 +1,30 @@
-// Function definitions for the app (having a party)
+// Function definitions for the app (ready to party)
 
 //TODO: Oh golly the joy of globals, they're like candy. I know they're bad but they just taste so good.
 
 //Build select elements in the sidebar that choose wich vocab bundle and language to use
-function buildBundleChooser (vocabs) {
+function buildBundleChooser (vocabs, vocabName) {
   var codeLangs = [];
   $.each(vocabs, function (value, props) {
-    codeLangs.push('<option value="'+value+'">'+props.title+'</option>');
+    var selected = '';
+    if (value === vocabName) {
+      selected = 'selected';
+    }
+    codeLangs.push('<option value="'+value+'" '+selected+'>'+props.title+'</option>');
   });
   $('#vocab-bundle-name').html(codeLangs.join(''));
 }
 
-function buildLanguageChooser (vocabs, vocabName) {
-  //console.log('buildLanguageChooser');
-  var humanLangs = [];
-  var value = '';
-  var text = '';
-  $.each(vocabs[vocabName].translations, function (locale, language) {
-    humanLangs.push('<option value="'+locale+'">'+language+'</option>');
+function buildLanguageChooser (vocabs, vocabName, locale) {
+  var languages = [];
+  $.each(vocabs[vocabName].translations, function (value, language) {
+    var selected = '';
+    if (value === locale) {
+      selected = 'selected';
+    }
+    languages.push('<option value="'+value+'" '+selected+'>'+language+'</option>');
   });
-  $('#vocab-language').html(humanLangs.join(''));
+  $('#vocab-language').html(languages.join(''));
 }
 
 // Build vocab list in the sidebar
@@ -35,7 +40,6 @@ function buildVocabList (tokens) {
 }
 
 function buildCredits (credits) {
-  //console.log('buildVocabList');
   var creditLinks = [];
 
   $.each(credits, function (i, credit) {
@@ -43,6 +47,15 @@ function buildCredits (credits) {
   });
 
   $('#vocab-credits').html(creditLinks.join(', '));
+}
+
+function setWindowTitle (title, language, credits) {
+  var creditNames = [];
+  $.each(credits, function(i, credit) {
+    creditNames.push(credit.name);
+  });
+  creditNames = creditNames.join(', ');
+  window.document.title = title + ' vocabulary in ' + language + ' by ' + creditNames;
 }
 
 function getTokenElements (tokens) {
@@ -89,6 +102,7 @@ function hiliteHash (hash) {
 }
 
 
+
 function loadVocabBundle (vocabName, locale) {
   //console.log('loadVocabBundle');
   //Start loading spinner
@@ -118,17 +132,10 @@ function loadVocabBundle (vocabName, locale) {
       .attr('tabindex', '0');
 
     //console.log('building credits');
+
     buildCredits(vocab.credits);
-
-    console.log(vocab);
-
-    var creditNames = [];
-    $.each(vocab.credits, function(i, credit) {
-      creditNames.push(credit.name);
-    });
-    creditNames = creditNames.join(', ');
-    console.log(creditNames);
-    window.document.title = vocab.title + ' vocabulary in ' + vocab.language + ' by ' + creditNames;
+    setWindowTitle(vocab.title, vocab.language, vocab.credits);
+    hiliteHash(location.hash);
   });
 
   //add tabindex=0 to all items in vocabList and parse the vocab so that you can give tabindex=0 to all tokens in the sample code too

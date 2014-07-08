@@ -96,16 +96,24 @@ input:focus, button:focus, select:focus, textarea:focus {
           box-shadow: 0px 0px 0px 1px #3c8caf;
   outline: none; }
 
+.vocab-modal {
+  position: absolute;
+  z-index: 600;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 0px;
+  bottom: auto; }
+
 .vocab-help {
   text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 600;
-  margin: 10px;
+  display: table;
+  margin: auto;
   padding: 20px;
   color: #333;
   background: rgba(255, 255, 255, 0.92);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
   border-radius: 5px; }
 
 .vocab-help-show {

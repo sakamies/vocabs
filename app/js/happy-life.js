@@ -4,20 +4,35 @@
 
 $(document).ready(function() {
 
-  function birthday (vocabs) {
+  function partyTime (vocabs) {
     var supportsHashChange = 'onhashchange' in window;
 
-    //TODO: load list of vocabs from vocabs.json or somehow parse this information server side from existing bundles in /vocabs. Could build it with grunt?
+    /*TODO:
+      - Should do url support, so /css/en/#statement+at-rule+import would load the css bundle, english language and highlight the tokens defined in the hash
+      - Needs some server side code to initially route all those paths to the js app, for it to read those /css/en, right?
+      - Add htaccess to load /index.html with any /bundle/language combo, language optional
+      - Read path with javascript and handle loading the appropriate bundle & language
+      - Implement url changing dynamically via html5 history api when changing vocabs & bundles
+    */
 
+    var initialVocab = $.cookie('vocabName');
+    console.log('read vocab from cookie:', initialVocab);
+    if (initialVocab === undefined) {
+      // If the cookie is not set, get the first vocab that's defined in vocabs
+      console.log('vocab not saved, set to first of vocabs');
+      initialVocab = Object.keys(vocabs)[0];
+    }
+    var initialLocale = $.cookie('locale');
+    console.log('read locale from cookie:', initialLocale);
+    if (initialLocale === undefined) {
+      console.log('locale not saved, set to first of translations');
+      initialLocale = vocabs[initialVocab].translations;
+      initialLocale = Object.keys(initialLocale)[0];
+    }
 
-    buildBundleChooser(vocabs);
-    buildLanguageChooser(vocabs, 'css'); //TODO: read default language from a cookie
-    loadVocabBundle('css', 'en');
-
-    //TODO: hiliteHash doesn't work on page load because loadVocabBundle is async, so this function fires before it has ever loaded anything.
-    hiliteHash(location.hash);
-
-    //TODO: Should do url support, so /css/en/#statement+at-rule+import would load the css bundle, english language and highlight the tokens defined in the hash. Needs some server side code to get the js to read those /css/en, right?
+    buildBundleChooser(vocabs, initialVocab);
+    buildLanguageChooser(vocabs, initialVocab, initialLocale);
+    loadVocabBundle(initialVocab, initialLocale);
 
 
     // Give all token elements in the code and sidebar a tabindex so they can be tabbed through in order
@@ -33,7 +48,6 @@ $(document).ready(function() {
       var tokenNames = getTokenNames(this);
 
       event.preventDefault();
-      event.stopPropagation();
 
       $(this)
         .closest('.content, .sidebar')
@@ -49,7 +63,6 @@ $(document).ready(function() {
       if (!supportsHashChange) {
         $(window).trigger('hashchange');
       }
-      //TODO: Save hash to a cookie
 
       /*
         TODO:
@@ -61,20 +74,18 @@ $(document).ready(function() {
     $('#vocab-bundle-name').on('change', function(event) {
       event.preventDefault();
 
-      //TODO: Save selected bundle name to a cookie
       var vocabName = $('#vocab-bundle-name').val();
       var locale = $('#vocab-language').val();
       buildLanguageChooser(vocabs, vocabName);
 
       if (vocabs[vocabName].translations.hasOwnProperty(locale)) {
-        //console.log('language exists');
         locale = $('#vocab-language').val(locale).val();
       } else {
-        //console.log('language doesnt exist');
         locale = $('#vocab-language').find(':first-child').prop('value');
       }
-      //console.log('locale set to:', locale);
 
+      $.cookie('vocabName', vocabName, { expires: 999, path: '/' });
+      $.cookie('locale', locale, { expires: 999, path: '/' });
 
       loadVocabBundle(vocabName, locale);
     });
@@ -83,7 +94,9 @@ $(document).ready(function() {
 
       var vocabName = $('#vocab-bundle-name').val();
       var locale = $('#vocab-language').val();
-      //TODO: Save selected language name to a cookie
+
+      $.cookie('locale', locale, { expires: 999, path: '/' });
+
       loadVocabBundle(vocabName, locale);
     });
 
@@ -103,25 +116,32 @@ $(document).ready(function() {
       }
     });
 
+    // Help dialog
+    var initialShowHelp = $.cookie('showHelp');
+    console.log('show help? ', initialShowHelp);
+    if (initialShowHelp === 'false') {
+      $('.vocab-help').hide();
+      $.cookie('showHelp', 'false', { expires: 999, path: '/' });
+    }
     $('.vocab-help-hide').on('click', function(event) {
       event.preventDefault();
       $('.vocab-help').hide();
+      $.cookie('showHelp', 'false', { expires: 999, path: '/' });
     });
     $('.vocab-help-show').on('click', function(event) {
       event.preventDefault();
+      event.stopPropagation();
       $('.vocab-help').show();
+      $.cookie('showHelp', 'true', { expires: 999, path: '/' });
     });
-
-    /*
-      TODO:
-      - Show help dialog initially
-      - Dismiss help dialog when the user starts clicking around
-      - Add a button somewhere to show help
-      - Save help state to a cookie
-    */
+    $(document).on('click', function(event) {
+      event.preventDefault();
+      $('.vocab-help').hide();
+      $.cookie('showHelp', 'false', { expires: 999, path: '/' });
+    });
   }
 
-  $.get('vocabs/vocabs.json', birthday);
+  $.get('vocabs/vocabs.json', partyTime);
 
 
 });

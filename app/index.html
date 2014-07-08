@@ -9,6 +9,7 @@
   <link rel="icon" href="img/favicon.png">
   <link href="css/happy.css" rel="stylesheet">
   <script src="lib/jquery-2.0.3.min.js"></script>
+  <script src="lib/jquery.cookie.js"></script>
   <script src="lib/keymaster.js"></script>
 
   <script src="js/happy-fun.js"></script>
@@ -19,28 +20,30 @@
 </head>
 <body class="">
   <div class="vocab-layout">
-    <div class="vocab-help">
-      Click on the code or the sidebar to see which is what.
-      <br>
-      Use the Tab key to browse via keyboard.
-      <hr>
-      <br>
-      App created by <a href="http://twitter.com/sakamies">@sakamies</a>
-      <br>
-      <br>
-      Improvements welcome at <a href="https://github.com/sakamies/vocabs">Github</a>
-      <br>
-      (Bugs, vocabularies, translations, ideas, anything)
-      <br>
-      <br>
-      <br>
-      <button class="vocab-help-hide">Close</button>
+    <div class="vocab-modal">
+      <div class="vocab-help">
+        Click on the code or the sidebar to see which is what.
+        <br>
+        Use the Tab key to browse via keyboard.
+        <hr>
+        <br>
+        App created by <a href="http://twitter.com/sakamies">@sakamies</a>
+        <br>
+        <br>
+        Improvements welcome at <a href="https://github.com/sakamies/vocabs">Github</a>
+        <br>
+        (Bugs, vocabularies, translations, ideas, anything)
+        <br>
+        <br>
+        <br>
+        <button class="vocab-help-hide">Close</button>
+      </div>
     </div>
     <div class="vocab-sidebar">
       <div class="vocab-chooser">
         <span style="visibility: hidden;">in</span>
         <select id="vocab-bundle-name"></select>
-        vocabulary
+        Vocabulary
         <br>
         in
         <select id="vocab-language"></select>
