@@ -1,0 +1,173 @@
+/* The vocab-code sample is not a syntax highlighted bit of actual vocab-code, but an html structure, something like vocab-codeOM and its parts. It was easier to make a structure by hand than make a syntax highlighter tokenize everything just right. So here we add the bits of syntax between the elements with vocab-code. Bad for copy & paste, but nicer to style. */
+
+.vocab-code {
+	.statement,
+	.selector,
+	.block,
+	.block::before,
+	.block::after,
+	.declaration {
+	  margin-bottom: 3px;
+	}
+	.block {
+	  margin-bottom: 19px;
+	}
+	.at-rule::before {
+		content: "@";
+	}
+	.import::after {
+		content: ";";
+	}
+	.media-query .expression::before {
+		content: '(';
+	}
+	.media-query .expression::after {
+		content: ')';
+	}
+	.media-feature {
+		position: relative;
+		margin-right: .5rem;
+	}
+	.media-feature::after {
+		display: block;
+		position: absolute;
+		right: -.5em;
+		right: -.5rem;
+		top: 0px;
+		content: ":";
+	}
+	.selector {
+		position: relative;
+		float: left;
+		clear: both;
+	}
+	 .selector > * {
+		position: relative;
+	}
+	 .selector::after {
+		position: absolute;
+		left: 100%;
+		content: ",";
+	}
+	 .selector:last-of-type::after {
+		content: " ";
+		white-space: pre;
+	}
+	.pseudo-class::before {
+		content: ':';
+	}
+	.pseudo-element::before {
+		content: '::';
+	}
+	 .combinator {
+		padding: 0em .5em;
+	}
+	.block {
+		clear: left;
+	}
+	.block::before {
+		display: block;
+		clear: left;
+		content: "{";
+	}
+	.block::after {
+		display: block;
+		clear: left;
+		content: "}";
+	}
+	.block .statement {
+		margin-left: 2rem;
+	}
+	.declaration {
+		float: left;
+		clear: both;
+		padding-right: 2em;
+	}
+	.declaration::after {
+		content: ";";
+	}
+	.declaration * {
+		display: inline-block;
+	}
+	.property {
+		margin-left: 2em;
+		margin-left: 2rem;
+		margin-right: .5em;
+		margin-right: .5rem;
+		display: block;
+		float: left;
+		position: relative;
+	}
+	.property::after {
+		display: block;
+		position: absolute;
+		right: -.5em;
+		right: -.5rem;
+		top: 0px;
+		content: ":";
+	}
+	.declaration .value {
+		display: block;
+		float: left;
+	}
+	.declaration .value > * {
+		display: block;
+		float: left;
+		margin-left: .5em;
+		margin-left: .5rem;
+	}
+
+	.vendor-prefix + * {
+		margin-left: 0em;
+		margin-left: 0rem;
+	}
+	.function {
+		display: block;
+		float: left;
+	}
+	.function::after {
+		content: ")";
+	}
+	.function-name {
+		display: block;
+		float: left;
+	}
+	.function-name::after {
+		content: "(";
+	}
+	.argument {
+		display: block;
+		float: left;
+	}
+	.argument::after {
+		display: block;
+		float: left;
+		content: ",";
+	}
+	.argument > * {
+		display: block;
+		float: left;
+	}
+	.argument > * + * {
+		margin-left: .5em;
+		margin-left: .5rem;
+	}
+	.argument + .argument {
+		margin-left: .5em;
+		margin-left: .5rem;
+	}
+	.argument:last-child::after {
+		content: "";
+	}
+
+	.color.hex::before {
+		content: "#";
+	}
+	.string::before,
+	.string::after {
+	    content: '"';
+	}
+	.descendant-combinator {
+		padding: 0em 0em;
+	}
+}

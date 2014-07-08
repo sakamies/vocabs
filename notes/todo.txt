@@ -1,0 +1,9 @@
+- Select element to choose vocabulary that is active and used
+- Scope the app class names well, so the vocabulary can tontain anything and doesn't need scoping, makes vocab syntax authoring much easier
+
+- Optimize speed: less flare, more performance, this app is about code, documentation and learning, not about graphic design
+- Add some light weight analytics
+
+- Build the vocab chooser with php by listing vocabs folder contents and check each bundle for supported languages. Doing manually is fine for now.
+
+- Favicon

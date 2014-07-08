@@ -1,0 +1,203 @@
+{
+  "title": "CSS",
+  "language": "English",
+  "credits": [
+    {
+      "name": "@sakamies",
+      "url": "http://twitter.com/sakamies"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Comment",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Statement",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Rule-set",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "At-rule",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Media query",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Media query list",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Media type",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Expression",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Media feature",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Block",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Declaration block",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Selector",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Simple selector",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Type selector",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Universal selector",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "ID selector",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Class selector",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Attribute selector",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Pseudo-class",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Pseudo-element",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Combinator",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Descendant combinator",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Child combinator",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Adjacent sibling combinator",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "General sibling combinator",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Declaration",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Property",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Value",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Function",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Keyword",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "String",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Number",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Percentage",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Length",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Unit",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Color",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Vendor prefix",
+      "url": ""
+    }
+  ]
+}

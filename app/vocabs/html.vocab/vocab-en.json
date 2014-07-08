@@ -1,0 +1,32 @@
+{
+  "title": "HTML",
+  "language": "English",
+  "credits": [
+    {
+      "name": "@pasiaj",
+      "url": "http://twitter.com/pasiaj"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "element",
+      "text": "Element",
+      "url": ""
+    },
+    {
+      "name": "start-tag",
+      "text": "Start tag",
+      "url": ""
+    },
+    {
+      "name": "end-tag",
+      "text": "End tag",
+      "url": ""
+    },
+    {
+      "name": "attribute",
+      "text": "Attribute",
+      "url": ""
+    }
+  ]
+}

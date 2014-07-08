@@ -1,0 +1,203 @@
+{
+  "title": "CSS",
+  "language": "Finnish",
+  "credits": [
+    {
+      "name": "@sakamies",
+      "url": "http://twitter.com/sakamies"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Kommentti",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Lauseke",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Sääntösetti",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "At-sääntö",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Mediakysely",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Mediakyselylista",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Median tyyppi",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "?",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Median ominaisuus",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Lohko",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Deklaraatiolohko",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Valitsin",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Yksinkertainen valitsin",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Tyyppivalitsin",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Universaali valitsin",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "ID-valitsin",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Luokkavalitsin",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Atribuuttivalitsin",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Pseudoluokka",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Pseudoelementti",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Yhdistin",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Jälkeläisyhdistin",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Lapsiyhdistin",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Viereinen sisarus -valitsin",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "Yleinen sisarus -valitsin",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Deklaraatio",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Ominaisuus",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Arvo",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Funktio",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Avainsana",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "?",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Numero",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Prosentti",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Pituus",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Yksikkö",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Väri",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "?",
+      "url": ""
+    }
+  ]
+}

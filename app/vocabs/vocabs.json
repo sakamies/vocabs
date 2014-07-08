@@ -1,0 +1,22 @@
+{
+  "css": {
+    "title": "CSS",
+    "translations": {
+      "en": "English",
+      "fr": "French",
+      "se": "Swedish"
+    }
+  },
+  "html": {
+    "title": "HTML",
+    "translations": {
+      "en": "English"
+    }
+  },
+  "test": {
+    "title": "Test",
+    "translations": {
+      "en": "English"
+    }
+  }
+}

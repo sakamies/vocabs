@@ -1,0 +1,6 @@
+{ "options": { "type" : "https"
+             , "port" : 443
+             , "base" : "."
+             , "cache" : "no-cache"
+             }
+}

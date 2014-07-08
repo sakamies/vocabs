@@ -1,0 +1,203 @@
+{
+  "title": "CSS",
+  "language": "French",
+  "credits": [
+    {
+      "name": "@citymont",
+      "url": "http://twitter.com/citymont"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Commentaire",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Déclaration",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Ensemble de règles",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "Règle @",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Requête média (Media query)",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Liste de requête média (media query)",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Type de média",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Expression",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Caractéristique du Média",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Bloc",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Bloc de déclaration",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Sélecteur",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Simple sélecteur",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Sélecteur de type",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Sélecteur universel",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "Sélecteur d\"Id",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Sélecteur de classe",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Sélecteur d\"attribut",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Pseudo-classe",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Pseudo-élément",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Combinateur",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Combinateur descendant",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Combinateur enfant",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Combinateur adjacent de même parent (premier élément)",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "Combinateur adjacent de même parent",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Déclaration",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Propriété",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Valeur",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Fonction",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Mot-clé",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "Chaîne",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Nombre",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Pourcentage",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Longueur",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Unité",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Couleur",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Préfixe CSS du navigateur",
+      "url": ""
+    }
+  ]
+}

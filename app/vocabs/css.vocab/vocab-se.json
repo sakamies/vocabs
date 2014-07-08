@@ -1,0 +1,203 @@
+{
+  "title": "CSS",
+  "language": "Swedish",
+  "credits": [
+    {
+      "name": "@enjikaka",
+      "url": "https://twitter.com/enjikaka"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Kommentar",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Del",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Regel",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "Specialregel",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Mediaquery",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Villkor för mediaquery",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Mediatyp",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Uttryck",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Medievärde",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Block",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Deklarationsblock",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Selektor",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Enkel selektor",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Typselektor",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Universalselektor",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "ID-selektor",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Klass-selektor",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Attributselektor",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Pseudoklass",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Pseudo-element",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Kombinationsselektor...",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "...för alla underordnade element",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "...för direkt underordnat element",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "...för första efterföljande syskonelement",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "...för alla följande syskonelement",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Deklaration",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Egenskap",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Värde",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Funktion",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Nyckelord",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "Sträng",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Nummer",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Procentenhet",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Längd",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Enhet",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Färg",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Webbläsarprefix",
+      "url": ""
+    }
+  ]
+}
