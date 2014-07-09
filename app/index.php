@@ -7,13 +7,13 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
   <link rel="icon" href="img/favicon.png">
-  <link href="css/happy.css" rel="stylesheet">
-  <script src="lib/jquery-2.0.3.min.js"></script>
-  <script src="lib/jquery.cookie.js"></script>
-  <script src="lib/keymaster.js"></script>
+  <link href="/assets/css/happy.css" rel="stylesheet">
+  <script src="/assets/lib/jquery-2.0.3.min.js"></script>
+  <script src="/assets/lib/jquery.cookie.js"></script>
+  <script src="/assets/lib/keymaster.js"></script>
 
-  <script src="js/happy-fun.js"></script>
-  <script src="js/happy-life.js"></script>
+  <script src="/assets/js/happy-fun.js"></script>
+  <script src="/assets/js/happy-life.js"></script>
 
   <link id="syntax-style" href="" rel="stylesheet">
 
@@ -22,17 +22,20 @@
   <div class="vocab-layout">
     <div class="vocab-modal">
       <div class="vocab-help">
+        <h1>vocabs</h1>
         Click on the code or the sidebar to see which is what.
         <br>
         Use the Tab key to browse via keyboard.
+        <br>
+        <br>
         <hr>
         <br>
+        <a href="https://github.com/sakamies/css-vocabulary/issues/new">Report an issue</a>
+        <br>
+        <a href="https://github.com/sakamies/css-vocabulary/fork">Create a vocab or translation</a>
+        <br>
+        <br>
         App created by <a href="http://twitter.com/sakamies">@sakamies</a>
-        <br>
-        <br>
-        Improvements welcome at <a href="https://github.com/sakamies/vocabs">Github</a>
-        <br>
-        (Bugs, vocabularies, translations, ideas, anything)
         <br>
         <br>
         <br>

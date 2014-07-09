@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     sass: {
       app: {
         files: {
-          'app/css/happy.css': 'app/scss/happy.scss',
+          'app/assets/css/happy.css': 'app/assets/scss/happy.scss',
         }
       },
       vocabs: {
@@ -19,10 +19,11 @@ module.exports = function(grunt) {
       }
     },
     autoprefixer: {
-      styles: {
+      app: {
         files: {
-          'app/css/happy.css': 'app/css/happy.css'
+          'app/assets/css/happy.css': 'app/assets/css/happy.css'
         }
+        //TODO: autoprefix vocabs too
       }
     },
     devserver: {
@@ -32,21 +33,14 @@ module.exports = function(grunt) {
           port: 2000,
           async: true
         }
-      },
-      site: {
-        options: {
-          base: 'site',
-          port: 3000,
-          async: true
-        }
       }
     },
     watch: {
       reload: {
         files: [
-          'app/*.html',
-          'app/css/*.css',
-          'app/js/*.js'
+          'app/assets/*.html',
+          'app/assets/css/*.css',
+          'app/assets/js/*.js'
         ],
         options: {
           livereload: true,
@@ -55,7 +49,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: [
-          'app/scss/*.scss',
+          'app/assets/scss/*.scss',
           'app/vocabs/*/syntax.scss'
         ],
         tasks: ['sass', 'autoprefixer'],

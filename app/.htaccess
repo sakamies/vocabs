@@ -1,0 +1,36 @@
+# Vocabs .htaccess
+
+Options -Indexes
+
+# rewrite rules
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# make sure to set the RewriteBase correctly
+# if you are running the app in a subfolder.
+# Otherwise links or the entire site will break.
+# 
+# If your homepage is http://yourdomain.com/mysite
+# Set the RewriteBase to:
+# 
+# RewriteBase /mysite
+# 
+RewriteBase /
+
+#RewriteCond %{REQUEST_URI} ^/assets.*
+#RewriteCond %{REQUEST_URI} ^/vocabs.*
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# /css/en should redirect to index.php?vocabBundle=css&locale=en
+# this only puts the path to the first parameter
+#RewriteRule ^(.*)$ index.php?vocabBundle=$1 [NC,L]
+RewriteRule ^([^/]+)$ index.php?vocabBundle=$1&locale=en [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)$ index.php?vocabBundle=$1&locale=$2 [NC,L]
+
+</IfModule>
+
+

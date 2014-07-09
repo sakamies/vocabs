@@ -4,18 +4,10 @@
 
 $(document).ready(function() {
 
-  function partyTime (vocabs) {
+  function partyTime (vocabs, initialVocab, initialLocale) {
     var supportsHashChange = 'onhashchange' in window;
 
-    /*TODO:
-      - Should do url support, so /css/en/#statement+at-rule+import would load the css bundle, english language and highlight the tokens defined in the hash
-      - Needs some server side code to initially route all those paths to the js app, for it to read those /css/en, right?
-      - Add htaccess to load /index.html with any /bundle/language combo, language optional
-      - Read path with javascript and handle loading the appropriate bundle & language
-      - Implement url changing dynamically via html5 history api when changing vocabs & bundles
-    */
-
-    var initialVocab = $.cookie('vocabName');
+    /*var initialVocab = $.cookie('vocabName');
     console.log('read vocab from cookie:', initialVocab);
     if (initialVocab === undefined) {
       // If the cookie is not set, get the first vocab that's defined in vocabs
@@ -28,7 +20,7 @@ $(document).ready(function() {
       console.log('locale not saved, set to first of translations');
       initialLocale = vocabs[initialVocab].translations;
       initialLocale = Object.keys(initialLocale)[0];
-    }
+    }*/
 
     buildBundleChooser(vocabs, initialVocab);
     buildLanguageChooser(vocabs, initialVocab, initialLocale);
@@ -48,6 +40,8 @@ $(document).ready(function() {
       var tokenNames = getTokenNames(this);
 
       event.preventDefault();
+      event.stopPropagation();
+      //TODO: stopPropagation is kinda like !important in css, gets hairy real quick
 
       $(this)
         .closest('.content, .sidebar')
@@ -118,7 +112,6 @@ $(document).ready(function() {
 
     // Help dialog
     var initialShowHelp = $.cookie('showHelp');
-    console.log('show help? ', initialShowHelp);
     if (initialShowHelp === 'false') {
       $('.vocab-help').hide();
       $.cookie('showHelp', 'false', { expires: 999, path: '/' });
@@ -130,18 +123,39 @@ $(document).ready(function() {
     });
     $('.vocab-help-show').on('click', function(event) {
       event.preventDefault();
-      event.stopPropagation();
       $('.vocab-help').show();
       $.cookie('showHelp', 'true', { expires: 999, path: '/' });
     });
-    $(document).on('click', function(event) {
-      event.preventDefault();
-      $('.vocab-help').hide();
-      $.cookie('showHelp', 'false', { expires: 999, path: '/' });
-    });
   }
 
-  $.get('vocabs/vocabs.json', partyTime);
+  $.get('/vocabs/vocabs.json', function(vocabs) {
+    //params come from the url http://domain/vocabName/locale
+    var params = window.location.pathname.split( '/' );
+    console.log(params);
+
+    var paramVocabName = params[1];
+    if (paramVocabName == null || paramVocabName == '') {
+      paramVocabName = Object.keys(vocabs)[0];
+      //TODO: if vocab not set, use html5 history api to put paramVocabName to url path
+    }
+
+    var paramLocale = params[2];
+    if (paramLocale == null || paramLocale == '') {
+      console.log('locale not in url, set to first of translations');
+      paramLocale = vocabs[paramVocabName].translations;
+      paramLocale = Object.keys(paramLocale)[0];
+      console.log('initial locale:', paramLocale);
+      //TODO: if locale not set, use html5 history api to put paramLocale to url path after paramVocabName
+    }
+
+    partyTime(vocabs, paramVocabName, paramLocale);
+
+    /*
+      TODO:
+      - Implement url changing path dynamically via html5 history api when changing vocabs & bundles
+      - Handle hash hilite on history navigation too
+    */
+  });
 
 
 });

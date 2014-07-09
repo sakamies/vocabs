@@ -106,7 +106,7 @@ function hiliteHash (hash) {
 function loadVocabBundle (vocabName, locale) {
   //console.log('loadVocabBundle');
   //Start loading spinner
-  var path = 'vocabs/' + vocabName + '.vocab/';
+  var path = '/vocabs/' + vocabName + '.vocab/';
   var vocabUrl = path + 'vocab-' + locale + '.json';
   var syntaxUrl = path + 'syntax.css';
   var sampleUrl = path + 'sample.html';

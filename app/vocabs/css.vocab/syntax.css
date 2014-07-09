@@ -1,4 +1,7 @@
-/* The vocab-code sample is not a syntax highlighted bit of actual vocab-code, but an html structure, something like vocab-codeOM and its parts. It was easier to make a structure by hand than make a syntax highlighter tokenize everything just right. So here we add the bits of syntax between the elements with vocab-code. Bad for copy & paste, but nicer to style. */
+/* The vocab-code sample is not a syntax highlighted bit of actual vocab-code, but an html structure, something like CssOM and its parts. It was easier to make a structure by hand than make a syntax highlighter tokenize everything just right. So here we add the bits of syntax between the elements with vocab-code. Bad for copy & paste, but nicer to style. */
+.vocab-code .vocab-token {
+  margin: 0;
+  padding: 0; }
 .vocab-code .statement, .vocab-code .selector, .vocab-code .block, .vocab-code .block::before, .vocab-code .block::after, .vocab-code .declaration {
   margin-bottom: 3px; }
 .vocab-code .block {

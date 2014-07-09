@@ -64,6 +64,9 @@ h1 {
   font-variant: small-caps;
   padding: 10px 0px 20px 0;
 }
+h2 {
+  padding: 10px 0px;
+}
 abbr {
   font-variant: small-caps;
   text-transform: lowercase;
@@ -131,7 +134,10 @@ textarea:focus {
 }
 .vocab-help {
   text-align: center;
-  display: table;
+  overflow: auto;
+  width: 430px;
+  max-width: 90vw;
+  max-height: 90vh;
   margin: auto;
   padding: 20px;
   color: #333;
@@ -239,8 +245,8 @@ textarea:focus {
 
 .vocab-code {
   line-height: 1.2em;
-  white-space: nowrap;
   display: block;
+  white-space: nowrap;
   width: auto;
   margin: auto;
   padding: 10px;
