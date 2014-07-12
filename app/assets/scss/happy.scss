@@ -61,11 +61,17 @@ h1 {
   font-weight: 400;
   font-size: 2em;
   line-height: .85em;
+  text-transform: lowercase;
   font-variant: small-caps;
   padding: 10px 0px 20px 0;
 }
 h2 {
-  padding: 10px 0px;
+  font-weight: 400;
+  font-size: 1.8em;
+  line-height: .85em;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  padding: 10px 0px 10px 0;
 }
 abbr {
   font-variant: small-caps;
@@ -134,6 +140,7 @@ textarea:focus {
 }
 .vocab-help {
   text-align: center;
+  position: relative;
   overflow: auto;
   width: 430px;
   max-width: 90vw;
@@ -145,21 +152,12 @@ textarea:focus {
   box-shadow: 0px 2px 5px black(.6);
   border-radius: 5px;
 }
-.vocab-help-show {
-  position: absolute;
-  top: 0;
-  line-height: 1em;
-  right: 0;
-  z-index: 900;
-  width: 1.5em;
-  height: 1.5em;
-  margin: 10px;
-  padding: 0;
-  color: white(.5);
-  background: transparent;
-  box-shadow: 0px 0px 0px 1px white(.5);
+.vocab-help table {
+  text-align: left;
+  margin: auto;
 }
-
+.vocab-help-hide {
+}
 
 
 .vocab-sidebar {
@@ -174,28 +172,10 @@ textarea:focus {
   -webkit-overflow-scrolling: touch;
   transition: right .5s ease;
 }
-.vocab-sidebar.focus {
+.vocab-sidebar.vocab-focus {
   box-shadow:
     inset 0px 3px 0px 0px hsla(70, 100%, 50%, .7),
     0px 0px 5px 0px rgba(0,0,0,.5);
-}
-
-
-
-.vocab-chooser {
-  padding: 15px 10px 10px 10px;
-}
-.vocab-chooser:after {
-  content: '';
-  display: block;
-  margin: 15px 0px 0px 0px;
-  border: 1px solid currentColor;
-  border-width: 1px 0px 0px 0px;
-  opacity: .5;
-}
-.vocab-chooser select {
-  width: 100px;
-  margin: 0 5px;
 }
 
 
@@ -211,11 +191,36 @@ textarea:focus {
   -webkit-overflow-scrolling: touch;
   transition: right .5s ease;
 }
-.vocab-content.focus {
+.vocab-content.vocab-focus {
   box-shadow: inset 0px 3px 0px 0px hsla(70, 100%, 50%, .7);
 }
 
 
+.vocab-list-header {
+  padding: 10px 10px 10px 10px;
+}
+.vocab-list-header:after {
+  content: '';
+  display: block;
+  margin: 0px 0px 5px 0px;
+  border: 1px solid currentColor;
+  border-width: 1px 0px 0px 0px;
+  opacity: .5;
+}
+.vocab-help-show {
+  position: absolute;
+  top: 14px;
+  line-height: 1em;
+  right: 0;
+  z-index: 900;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 10px;
+  padding: 0;
+  color: white(.5);
+  background: transparent;
+  box-shadow: 0px 0px 0px 1px white(.5);
+}
 
 .vocab-list {
   line-height: 1.2em;

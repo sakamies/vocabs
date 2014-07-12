@@ -2,7 +2,9 @@
 
 //TODO: Oh golly the joy of globals, they're like candy. I know they're bad but they just taste so good.
 
+//TODO: Combine buildBundleChooser buildLanguageChooser, buildCredits to a buildVocabLinkList or something instead, vocab is now selected just from a list of links
 //Build select elements in the sidebar that choose wich vocab bundle and language to use
+//TODO: vocabs object structure changed, need to redo all parsing
 function buildBundleChooser (vocabs, vocabName) {
   var codeLangs = [];
   $.each(vocabs, function (value, props) {
@@ -14,7 +16,6 @@ function buildBundleChooser (vocabs, vocabName) {
   });
   $('#vocab-bundle-name').html(codeLangs.join(''));
 }
-
 function buildLanguageChooser (vocabs, vocabName, locale) {
   var languages = [];
   $.each(vocabs[vocabName].translations, function (value, language) {
@@ -25,6 +26,15 @@ function buildLanguageChooser (vocabs, vocabName, locale) {
     languages.push('<option value="'+value+'" '+selected+'>'+language+'</option>');
   });
   $('#vocab-language').html(languages.join(''));
+}
+function buildCredits (credits) {
+  var creditLinks = [];
+
+  $.each(credits, function (i, credit) {
+    creditLinks.push('<a href="'+credit.url+'">'+credit.name+'</a>');
+  });
+
+  $('#vocab-credits').html(creditLinks.join(', '));
 }
 
 // Build vocab list in the sidebar
@@ -39,23 +49,8 @@ function buildVocabList (tokens) {
   $('.vocab-list').html(vocabListItems.join(''));
 }
 
-function buildCredits (credits) {
-  var creditLinks = [];
-
-  $.each(credits, function (i, credit) {
-    creditLinks.push('<a href="'+credit.url+'">'+credit.name+'</a>');
-  });
-
-  $('#vocab-credits').html(creditLinks.join(', '));
-}
-
-function setWindowTitle (title, language, credits) {
-  var creditNames = [];
-  $.each(credits, function(i, credit) {
-    creditNames.push(credit.name);
-  });
-  creditNames = creditNames.join(', ');
-  window.document.title = title + ' vocabulary in ' + language + ' by ' + creditNames;
+function setWindowTitle (title, language) {
+  window.document.title = title + ' vocabulary in ' + language;
 }
 
 function getTokenElements (tokens) {
@@ -102,7 +97,6 @@ function hiliteHash (hash) {
 }
 
 
-
 function loadVocabBundle (vocabName, locale) {
   //console.log('loadVocabBundle');
   //Start loading spinner
@@ -133,8 +127,7 @@ function loadVocabBundle (vocabName, locale) {
 
     //console.log('building credits');
 
-    buildCredits(vocab.credits);
-    setWindowTitle(vocab.title, vocab.language, vocab.credits);
+    setWindowTitle(vocab.title, vocab.language);
     hiliteHash(location.hash);
   });
 

@@ -1,12 +1,4 @@
 {
-  "title": "CSS",
-  "language": "Swedish",
-  "credits": [
-    {
-      "name": "@enjikaka",
-      "url": "https://twitter.com/enjikaka"
-    }
-  ],
   "tokens": [
     {
       "name": "comment",

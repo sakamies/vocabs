@@ -1,12 +1,4 @@
 {
-  "title": "CSS",
-  "language": "French",
-  "credits": [
-    {
-      "name": "@citymont",
-      "url": "http://twitter.com/citymont"
-    }
-  ],
   "tokens": [
     {
       "name": "comment",

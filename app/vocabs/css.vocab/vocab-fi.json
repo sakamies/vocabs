@@ -1,12 +1,4 @@
 {
-  "title": "CSS",
-  "language": "Finnish",
-  "credits": [
-    {
-      "name": "@sakamies",
-      "url": "http://twitter.com/sakamies"
-    }
-  ],
   "tokens": [
     {
       "name": "comment",
@@ -35,7 +27,7 @@
     },
     {
       "name": "media-query-list",
-      "text": "Mediakyselylista",
+      "text": "Mediakyselyn lista",
       "url": ""
     },
 
@@ -61,7 +53,7 @@
     },
     {
       "name": "declaration-block",
-      "text": "Deklaraatiolohko",
+      "text": "Määrelohko",
       "url": ""
     },
     {
@@ -136,7 +128,7 @@
     },
     {
       "name": "declaration",
-      "text": "Deklaraatio",
+      "text": "Määre",
       "url": ""
     },
     {

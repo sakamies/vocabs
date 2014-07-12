@@ -22,38 +22,69 @@
   <div class="vocab-layout">
     <div class="vocab-modal">
       <div class="vocab-help">
-        <h1>vocabs</h1>
+        <h1 class="vocab-title">CSS Vocabulary</h1>
         Click on the code or the sidebar to see which is what.
         <br>
         Use the Tab key to browse via keyboard.
         <br>
         <br>
+        <a href="https://github.com/sakamies/css-vocabulary/issues/new">Report an issue</a>
+        <br>
+        <br>
+        <button class="vocab-help-hide">Close help</button>
+        <br>
+        <br>
         <hr>
         <br>
-        <a href="https://github.com/sakamies/css-vocabulary/issues/new">Report an issue</a>
+        Other vocabularies:
+        <h2>CSS</h2>
+        <table>
+          <tr>
+            <td>
+              <a href="/css/en">English</a>
+            </td>
+            <td>
+              by <a href="">@sakamies</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="/css/fr">French</a>
+            </td>
+            <td>
+              by <a href="">@citymont</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="/css/fi">Finnish</a>
+            </td>
+            <td>
+              by <a href="">@sakamies</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="/css/se">Swedish</a>
+            </td>
+            <td>
+              by <a href="">@enjikaka</a>
+            </td>
+          </tr>
+        </table>
         <br>
         <a href="https://github.com/sakamies/css-vocabulary/fork">Create a vocab or translation</a>
         <br>
         <br>
         App created by <a href="http://twitter.com/sakamies">@sakamies</a>
         <br>
-        <br>
-        <br>
-        <button class="vocab-help-hide">Close</button>
       </div>
     </div>
     <div class="vocab-sidebar">
-      <div class="vocab-chooser">
-        <span style="visibility: hidden;">in</span>
-        <select id="vocab-bundle-name"></select>
-        Vocabulary
-        <br>
-        in
-        <select id="vocab-language"></select>
-        by
-        <span id="vocab-credits">
-          <a href="http://twitter.com/sakamies">@sakamies</a>
-        </span>
+      <div class="vocab-list-header">
+        <h1 class="vocab-title">
+          CSS Vocabulary
+        </h1>
       </div>
       <button class="vocab-help-show">?</button>
       <ul class="vocab-list"></ul>

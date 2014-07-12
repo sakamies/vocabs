@@ -1,22 +1,19 @@
 {
   "css": {
-    "title": "CSS",
-    "translations": {
-      "en": "English",
-      "fr": "French",
-      "se": "Swedish"
-    }
-  },
-  "html": {
-    "title": "HTML",
-    "translations": {
-      "en": "English"
-    }
-  },
-  "test": {
-    "title": "Test",
-    "translations": {
-      "en": "English"
+    "en": {
+      "language": "English",
+      "title": "CSS Vocabulary",
+      "help": "Click on the code or the sidebar to see which is what.<br>Use the Tab key to browse via keyboard.",
+      "credits": {
+        "name": "@sakamies",
+        "url": "http://twitter.com/sakamies"
+      }
+    },
+    "fr": {
+
+    },
+    "se": {
+
     }
   }
 }

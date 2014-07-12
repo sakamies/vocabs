@@ -2,28 +2,13 @@
 
 // All css classes that are related to the app should be prefixed with vocab- to minimize possibble conflicts with vocab definitions conflicting with app class names
 
+//TODO: possibility to translate all strings in the app for each translation?
+
 $(document).ready(function() {
 
   function partyTime (vocabs, initialVocab, initialLocale) {
     var supportsHashChange = 'onhashchange' in window;
 
-    /*var initialVocab = $.cookie('vocabName');
-    console.log('read vocab from cookie:', initialVocab);
-    if (initialVocab === undefined) {
-      // If the cookie is not set, get the first vocab that's defined in vocabs
-      console.log('vocab not saved, set to first of vocabs');
-      initialVocab = Object.keys(vocabs)[0];
-    }
-    var initialLocale = $.cookie('locale');
-    console.log('read locale from cookie:', initialLocale);
-    if (initialLocale === undefined) {
-      console.log('locale not saved, set to first of translations');
-      initialLocale = vocabs[initialVocab].translations;
-      initialLocale = Object.keys(initialLocale)[0];
-    }*/
-
-    buildBundleChooser(vocabs, initialVocab);
-    buildLanguageChooser(vocabs, initialVocab, initialLocale);
     loadVocabBundle(initialVocab, initialLocale);
 
 
@@ -44,7 +29,7 @@ $(document).ready(function() {
       //TODO: stopPropagation is kinda like !important in css, gets hairy real quick
 
       $(this)
-        .closest('.content, .sidebar')
+        .closest('.vocab-content, .vocab-sidebar')
         .addClass('vocab-focus')
         .siblings()
         .removeClass('vocab-focus');
@@ -63,35 +48,6 @@ $(document).ready(function() {
         - if there's nothing selected showing in either panel, scroll that panel so at least something selected is visible
         - There's probably a plugin for this, check out how it's done
       */
-    });
-
-    $('#vocab-bundle-name').on('change', function(event) {
-      event.preventDefault();
-
-      var vocabName = $('#vocab-bundle-name').val();
-      var locale = $('#vocab-language').val();
-      buildLanguageChooser(vocabs, vocabName);
-
-      if (vocabs[vocabName].translations.hasOwnProperty(locale)) {
-        locale = $('#vocab-language').val(locale).val();
-      } else {
-        locale = $('#vocab-language').find(':first-child').prop('value');
-      }
-
-      $.cookie('vocabName', vocabName, { expires: 999, path: '/' });
-      $.cookie('locale', locale, { expires: 999, path: '/' });
-
-      loadVocabBundle(vocabName, locale);
-    });
-    $('#vocab-language').on('change', function(event) {
-      event.preventDefault();
-
-      var vocabName = $('#vocab-bundle-name').val();
-      var locale = $('#vocab-language').val();
-
-      $.cookie('locale', locale, { expires: 999, path: '/' });
-
-      loadVocabBundle(vocabName, locale);
     });
 
     // Key bindings
@@ -149,12 +105,6 @@ $(document).ready(function() {
     }
 
     partyTime(vocabs, paramVocabName, paramLocale);
-
-    /*
-      TODO:
-      - Implement url changing path dynamically via html5 history api when changing vocabs & bundles
-      - Handle hash hilite on history navigation too
-    */
   });
 
 

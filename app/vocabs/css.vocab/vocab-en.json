@@ -1,12 +1,4 @@
 {
-  "title": "CSS",
-  "language": "English",
-  "credits": [
-    {
-      "name": "@sakamies",
-      "url": "http://twitter.com/sakamies"
-    }
-  ],
   "tokens": [
     {
       "name": "comment",
