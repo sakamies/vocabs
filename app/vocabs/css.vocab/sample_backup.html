@@ -1,0 +1,108 @@
+<div class="comment">
+  /* Styles */
+</div>
+<br>
+<div class="statement at-rule import"><span class="identifier">import</span> <span class="string">extra.css</span></div>
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector type-selector">ul</span><span class="combinator descendant-combinator"> </span><span class="simple-selector type-selector">li</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property">list-style</div>
+      <div class="value"><span class="keyword">linear</span></div>
+    </div>
+    <div class="declaration">
+      <div class="property">margin</div>
+      <div class="value"><span class="length"><span class="number">2</span><span class="unit">em</span></span> <span class="percentage"><span class="number">20</span>%</span> <span class="length"><span class="number">15</span><span class="unit">px</span></span> <span class="number">0</span></div>
+    </div>
+  </div>
+</div>
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector id-selector">#content</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property"><span class="vendor-prefix">-webkit-</span>font-smoothing</div>
+      <div class="value"><span class="keyword">antialiased</span></div>
+    </div>
+    <div class="declaration">
+      <div class="property">background</div>
+      <div class="value">
+        <div class="function">
+          <div class="function-name">url</div>
+          <div class="argument"><span class="url">img/gradient.png</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="declaration">
+      <div class="property">background</div>
+      <div class="value">
+        <div class="function">
+          <div class="function-name">linear-gradient</div>
+          <div class="argument">
+            <span class="keyword">to</span>
+            <span class="keyword">bottom</span>
+          </div>
+          <div class="argument"><span class="keyword color">red</span></div>
+          <div class="argument"><span class="color">rgba(255,0,0,0)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="statement at-rule rule-set media-query"><span class="identifier">media</span>
+  <span class="media-query-list">
+    <span class="keyword">only</span>
+    <span class="media-type">screen</span>
+    <span class="keyword">and</span>
+    <span class="expression"><span class="media-feature">min-widivh</span> <span class="value"><span class="length"><span class="number">35</span><span class="unit">em</span></span></span></span>
+  </span>
+  <div class="block">
+    <div class="statement rule-set">
+      <div class="selector"><span class="simple-selector id-selector">#content</span></div>
+      <div class="block declaration-block">
+        <div class="declaration">
+          <div class="property">widivh</div><div class="value"><span class="percentage"><span class="number">50</span>%</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector class-selector">.item</span><span class="combinator adjacent-sibling-combinator">+</span><span class="simple-selector class-selector">.item</span></div>
+  <div class="selector"><span class="simple-selector class-selector">.item</span><span class="combinator general-sibling-combinator">~</span><span class="simple-selector class-selector">.item</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property">margin-left</div>
+      <div class="value"><span class="length"><span class="number">-15</span><span class="unit">px</span></span></div>
+    </div>
+  </div>
+</div>
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector id-selector">#buttons</span><span class="simple-selector class-selector">.lotsofcontent</span></div>
+  <div class="selector"><span class="simple-selector id-selector">#buttons</span><span class="combinator child-combinator">&gt;</span><span class="simple-selector universal-selector">*</span></div>
+  <div class="selector"><span class="simple-selector type-selector">input</span><span class="simple-selector attribute-selector">[type=submit]</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property">border-radius</div>
+      <div class="value"><span class="length"><span class="number">.3</span><span class="unit">rem</span></span></div>
+    </div>
+  </div>
+</div>
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector type-selector">a</span><span class="simple-selector pseudo-class">hover</span></div>
+  <div class="selector"><span class="simple-selector type-selector">a</span><span class="simple-selector pseudo-class">focus</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property">color</div>
+      <div class="value"><span class="keyword color">green</span></div>
+    </div>
+  </div>
+</div>
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector type-selector">blockquote</span><span class="pseudo-element">before</span></div>
+  <div class="selector"><span class="simple-selector type-selector">blockquote</span><span class="pseudo-element">after</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property">content</div>
+      <div class="value"><span class="string">\201d</span></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,143 @@
+.comment
+  Styles
+
+.statement.at-rule.import
+  .identifier import
+  .string extra.css
+
+.statement.rule-set
+  .selector
+    .simple-selector.type-selector ul
+    .combinator.descendant-combinator &nbsp;
+    .simple-selector.type-selector li
+  .block.declaration-block
+    .declaration
+      .property list-style
+      .value
+        .keyword square
+    .declaration
+      .property margin
+      .value
+        .length
+          .number 2
+          .unit em
+        .percentage
+          .number 20
+          \%
+        .length
+          .number 15
+          .unit px
+        .number 0
+
+.statement.rule-set
+  .selector
+    .simple-selector.id-selector #content
+  .block.declaration-block
+    .declaration
+      .property
+        .vendor-prefix -webkit-
+        font-smoothing
+      .value
+        .keyword antialiased
+    .declaration
+      .property background
+      .value
+        .function
+          .function-name url
+          .arguments
+            .agrument
+              .url img/gradient.png
+    .declaration
+      .property background
+      .value
+        .function-name linear-gradient
+        .arguments
+          .argument
+            .keyword to
+            .keyword bottom
+          .argument
+            .keyword.color red
+          .argument
+            .color rgba(255,0,0,0)
+
+.statement.at-rule.rule-set.media-query
+  .identifier media
+  .media-query-list
+    .keyword only
+    .media-type screen
+    .keyword and
+    .expression
+      .media-feature min-width
+      .value
+        .length
+          .number 35
+          .unit em
+  .block
+    .statement.rule-set
+      .selector
+        .simple-selector.id-selector #content
+      .block.declaration-block
+        .declaration
+          .property width
+          .value
+            .percentage
+              .number 50
+              \%
+
+.statement.rule-set
+  .selector
+    .simple-selector.class-selector .item
+    .combinator.adjacent-sibling-combinator +
+    .simple-selector.class.selector .item
+  .selector
+    .simple-selector.class-selector .item
+    .combinator.general-sibling-combinator ~
+    .simple-selector.class-selector .item
+  .block.declaration-block
+    .declaration
+      .property margin-left
+      .value
+        .length
+          .number -15
+          .unit px
+
+.statement.rule-set
+  .selector
+    .simple-selector.id-selector #buttons
+    .simple-selector.class-selector .lotsofcontent
+  .selector
+    .simple-selector.id-selector #buttons
+    .combinator.child-combinator &gt;
+    .simple-selector.universal-selector *
+  .selector
+    .simple-selector.type-selector
+    .simple-selector.attribute-selector [type=submit]
+  .block.declaration-block
+    .declaration
+      .property border-radius
+      .value
+        .length
+          .number .3
+          .unit rem
+
+
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector type-selector">a</span><span class="simple-selector pseudo-class">hover</span></div>
+  <div class="selector"><span class="simple-selector type-selector">a</span><span class="simple-selector pseudo-class">focus</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property">color</div>
+      <div class="value"><span class="keyword color">green</span></div>
+    </div>
+  </div>
+</div>
+<div class="statement rule-set">
+  <div class="selector"><span class="simple-selector type-selector">blockquote</span><span class="pseudo-element">before</span></div>
+  <div class="selector"><span class="simple-selector type-selector">blockquote</span><span class="pseudo-element">after</span></div>
+  <div class="block declaration-block">
+    <div class="declaration">
+      <div class="property">content</div>
+      <div class="value"><span class="string">\201d</span></div>
+    </div>
+  </div>
+</div>

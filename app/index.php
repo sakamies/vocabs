@@ -28,55 +28,61 @@
         Use the Tab key to browse via keyboard.
         <br>
         <br>
-        <a href="https://github.com/sakamies/css-vocabulary/issues/new">Report an issue</a>
-        <br>
-        <br>
         <button class="vocab-help-hide">Close help</button>
         <br>
         <br>
         <hr>
-        <br>
-        Other vocabularies:
-        <h2>CSS</h2>
+        <h2 id="css-vocabs">CSS</h2>
         <table>
           <tr>
             <td>
-              <a href="/css/en">English</a>
+              <a href="/css/en">CSS Vocabulary</a>
             </td>
             <td>
-              by <a href="">@sakamies</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/css/fr">French</a>
-            </td>
-            <td>
-              by <a href="">@citymont</a>
+              English / <a href="">@sakamies</a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="/css/fi">Finnish</a>
+              <a href="/css/fr">Lexique CSS</a>
             </td>
             <td>
-              by <a href="">@sakamies</a>
+              Français / <a href="">@citymont</a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="/css/se">Swedish</a>
+              <a href="/css/fi">CSS Sanasto</a>
             </td>
             <td>
-              by <a href="">@enjikaka</a>
+              Suomi / <a href="">@sakamies</a>
             </td>
           </tr>
         </table>
         <br>
+        <h2 id="html-vocabs">HTML</h2>
+        <table>
+          <tr>
+            <td>
+              <a href="/css/en">HTML Vocabulary</a>
+            </td>
+            <td>
+              English
+              / <a href="">@sakamies</a>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <a href="https://github.com/sakamies/css-vocabulary/issues/new">
+          Report an issue
+        </a>
+        <br>
         <a href="https://github.com/sakamies/css-vocabulary/fork">Create a vocab or translation</a>
         <br>
         <br>
-        App created by <a href="http://twitter.com/sakamies">@sakamies</a>
+        Vocab spy by <a href="http://twitter.com/sakamies">@sakamies</a>
         <br>
       </div>
     </div>

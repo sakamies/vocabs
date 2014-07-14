@@ -39,7 +39,6 @@ function buildCredits (credits) {
 
 // Build vocab list in the sidebar
 function buildVocabList (tokens) {
-  //console.log('buildVocabList');
   var vocabListItems = [];
 
   $.each(tokens, function (i, token) {
@@ -49,12 +48,7 @@ function buildVocabList (tokens) {
   $('.vocab-list').html(vocabListItems.join(''));
 }
 
-function setWindowTitle (title, language) {
-  window.document.title = title + ' vocabulary in ' + language;
-}
-
 function getTokenElements (tokens) {
-  //console.log('getTokenElements', tokens);
   var selector = $.map(tokens, function (token) {
     return token.name;
   }).join(', .');
@@ -97,8 +91,7 @@ function hiliteHash (hash) {
 }
 
 
-function loadVocabBundle (vocabName, locale) {
-  //console.log('loadVocabBundle');
+function loadVocabBundle (vocabs, vocabName, locale) {
   //Start loading spinner
   var path = '/vocabs/' + vocabName + '.vocab/';
   var vocabUrl = path + 'vocab-' + locale + '.json';
@@ -107,27 +100,19 @@ function loadVocabBundle (vocabName, locale) {
   var vocab = {};
   var sample = '';
 
-  //console.log('syntax.css');
   $('#syntax-style').prop('href', syntaxUrl);
 
-  //console.log('sample.html');
   $.get(sampleUrl, function(sample, status) {
-    //console.log(sample);
     $('.vocab-code').html(sample);
-    //console.log('status:', status);
   });
 
-  //console.log('vocab-x.json');
   $.get(vocabUrl, function(vocab) {
-    //console.log('loading tokens to sidebar:', vocab.tokens);
     buildVocabList(vocab.tokens);
     getTokenElements(vocab.tokens)
       .addClass('vocab-token')
       .attr('tabindex', '0');
 
-    //console.log('building credits');
-
-    setWindowTitle(vocab.title, vocab.language);
+    window.document.title = vocabs[vocabName][locale].title;
     hiliteHash(location.hash);
   });
 

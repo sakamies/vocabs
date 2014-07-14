@@ -5,3 +5,7 @@
 - Add some light weight analytics
 - Favicon
 - Build vocabs.json with grunt instead of by hand
+
+
+
+- code sample definition in haml! define the structure first

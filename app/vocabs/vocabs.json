@@ -4,13 +4,21 @@
       "language": "English",
       "title": "CSS Vocabulary",
       "help": "Click on the code or the sidebar to see which is what.<br>Use the Tab key to browse via keyboard.",
+      "close-help": "Close help",
       "credits": {
         "name": "@sakamies",
         "url": "http://twitter.com/sakamies"
       }
     },
     "fr": {
-
+      "language": "French",
+      "title": "Lexique CSS",
+      "help": "",
+      "close-help": "",
+      "credits": {
+        "name": "",
+        "url": ""
+      }
     },
     "se": {
 

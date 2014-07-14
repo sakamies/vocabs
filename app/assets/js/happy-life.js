@@ -9,7 +9,7 @@ $(document).ready(function() {
   function partyTime (vocabs, initialVocab, initialLocale) {
     var supportsHashChange = 'onhashchange' in window;
 
-    loadVocabBundle(initialVocab, initialLocale);
+    loadVocabBundle(vocabs, initialVocab, initialLocale);
 
 
     // Give all token elements in the code and sidebar a tabindex so they can be tabbed through in order
@@ -87,7 +87,6 @@ $(document).ready(function() {
   $.get('/vocabs/vocabs.json', function(vocabs) {
     //params come from the url http://domain/vocabName/locale
     var params = window.location.pathname.split( '/' );
-    console.log(params);
 
     var paramVocabName = params[1];
     if (paramVocabName == null || paramVocabName == '') {
@@ -97,10 +96,8 @@ $(document).ready(function() {
 
     var paramLocale = params[2];
     if (paramLocale == null || paramLocale == '') {
-      console.log('locale not in url, set to first of translations');
-      paramLocale = vocabs[paramVocabName].translations;
+      paramLocale = vocabs[paramVocabName];
       paramLocale = Object.keys(paramLocale)[0];
-      console.log('initial locale:', paramLocale);
       //TODO: if locale not set, use html5 history api to put paramLocale to url path after paramVocabName
     }
 
