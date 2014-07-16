@@ -1,23 +1,19 @@
-/ Vocab structure for HTML
+%span.comment This is a comment
 
-.element
-  .start-tag
-    .element-name div
-    .attributes
-      .attribute
-        .attribute-name class
-        .attribute-value father
-      .attribute
-        .attribute-name contenteditable
-  .children
-    .element.child Children and stuff go here
-  .end-tag
-  
-/ What other stuff does html need?
-  .comment
+%span.element
+  %span.start-tag
+    %span.element-name div
+    %span.attributes
+      %span.attribute
+        %span.attribute-name class
+        %span.attribute-value father
+      %span.attribute
+        %span.attribute-name contenteditable
+    %span.children
+      %span.element.child Children and stuff go here
+  %span.end-tag
 
 / Deeper stuff
-  .root
-  .parent
-
-/ CSS was easy, but html might get out of hand as to where to stop dwelling deeper. Needs a tight scope to be useful to the most number of people
+%span.root root?
+%span.parent parent?
+%span.parent what else?

@@ -1,143 +1,214 @@
-.comment
-  Styles
-
-.statement.at-rule.import
-  .identifier import
-  .string extra.css
-
-.statement.rule-set
-  .selector
-    .simple-selector.type-selector ul
-    .combinator.descendant-combinator &nbsp;
-    .simple-selector.type-selector li
-  .block.declaration-block
-    .declaration
-      .property list-style
-      .value
-        .keyword square
-    .declaration
-      .property margin
-      .value
-        .length
-          .number 2
-          .unit em
-        .percentage
-          .number 20
-          \%
-        .length
-          .number 15
-          .unit px
-        .number 0
-
-.statement.rule-set
-  .selector
-    .simple-selector.id-selector #content
-  .block.declaration-block
-    .declaration
-      .property
-        .vendor-prefix -webkit-
-        font-smoothing
-      .value
-        .keyword antialiased
-    .declaration
-      .property background
-      .value
-        .function
-          .function-name url
-          .arguments
-            .agrument
-              .url img/gradient.png
-    .declaration
-      .property background
-      .value
-        .function-name linear-gradient
-        .arguments
-          .argument
-            .keyword to
-            .keyword bottom
-          .argument
-            .keyword.color red
-          .argument
-            .color rgba(255,0,0,0)
-
-.statement.at-rule.rule-set.media-query
-  .identifier media
-  .media-query-list
-    .keyword only
-    .media-type screen
-    .keyword and
-    .expression
-      .media-feature min-width
-      .value
-        .length
-          .number 35
-          .unit em
-  .block
-    .statement.rule-set
-      .selector
-        .simple-selector.id-selector #content
-      .block.declaration-block
-        .declaration
-          .property width
-          .value
-            .percentage
-              .number 50
-              \%
-
-.statement.rule-set
-  .selector
-    .simple-selector.class-selector .item
-    .combinator.adjacent-sibling-combinator +
-    .simple-selector.class.selector .item
-  .selector
-    .simple-selector.class-selector .item
-    .combinator.general-sibling-combinator ~
-    .simple-selector.class-selector .item
-  .block.declaration-block
-    .declaration
-      .property margin-left
-      .value
-        .length
-          .number -15
-          .unit px
-
-.statement.rule-set
-  .selector
-    .simple-selector.id-selector #buttons
-    .simple-selector.class-selector .lotsofcontent
-  .selector
-    .simple-selector.id-selector #buttons
-    .combinator.child-combinator &gt;
-    .simple-selector.universal-selector *
-  .selector
-    .simple-selector.type-selector
-    .simple-selector.attribute-selector [type=submit]
-  .block.declaration-block
-    .declaration
-      .property border-radius
-      .value
-        .length
-          .number .3
-          .unit rem
-
-
-<div class="statement rule-set">
-  <div class="selector"><span class="simple-selector type-selector">a</span><span class="simple-selector pseudo-class">hover</span></div>
-  <div class="selector"><span class="simple-selector type-selector">a</span><span class="simple-selector pseudo-class">focus</span></div>
-  <div class="block declaration-block">
-    <div class="declaration">
-      <div class="property">color</div>
-      <div class="value"><span class="keyword color">green</span></div>
-    </div>
-  </div>
-</div>
-<div class="statement rule-set">
-  <div class="selector"><span class="simple-selector type-selector">blockquote</span><span class="pseudo-element">before</span></div>
-  <div class="selector"><span class="simple-selector type-selector">blockquote</span><span class="pseudo-element">after</span></div>
-  <div class="block declaration-block">
-    <div class="declaration">
-      <div class="property">content</div>
-      <div class="value"><span class="string">\201d</span></div>
-    </div>
-  </div>
-</div>
+<br>
+%span.comment<> /* Styles */
+<br>
+%span.statement.at-rule.import<>
+  \@import&nbsp;
+  %span.string<> "extra.css"
+  \;<br>
+&nbsp;
+%span.statement.rule-set<>
+  %span.selector<>
+    %span.simple-selector.type-selector<> ul
+    %span.combinator.descendant-combinator<> &nbsp;
+    %span.simple-selector.type-selector<> li
+  %span.block.declaration-block<>
+    \{<br>
+    %span.declaration<>
+      %span.property<> list-style
+      \:&nbsp;
+      %span.value<>
+        %span.keyword<> square
+      \;<br>
+    %span.declaration<>
+      %span.property<> margin
+      \:&nbsp;
+      %span.value<>
+        %span.length<>
+          %span.number<> 2
+          %span.unit<> em
+        &nbsp;
+        %span.percentage<>
+          %span.number<> 20
+          %span<> %
+        &nbsp;
+        %span.length<>
+          %span.number<> 15
+          %span.unit<> px
+        &nbsp;
+        %span.number<> 0
+      \;<br>
+    }
+&nbsp;
+%span.statement.rule-set<>
+  %span.selector<>
+    %span.simple-selector.id-selector<> #content
+  %span.block.declaration-block<>
+    \{<br>
+    %span.declaration<>
+      %span.property<>
+        %span.vendor-prefix<> -webkit-
+        %span<> font-smoothing
+      \:&nbsp;
+      %span.value<>
+        %span.keyword<> antialiased
+      \;<br>
+    %span.declaration<>
+      %span.property<> background
+      \:&nbsp;
+      %span.value<>
+        %span.function<>
+          %span.function-name<> url
+          \(
+          %span.arguments<>
+            %span.agrument<>
+              %span.url<> img/gradient.png
+          \)
+      \;<br>
+    %span.declaration<>
+      %span.property<> background
+      \:&nbsp;
+      %span.value<>
+        %span.function
+          %span.function-name<> linear-gradient
+          \(
+          %span.arguments<>
+            %span.argument<>
+              %span.keyword<> to
+              &nbsp;
+              %span.keyword<> bottom
+            \,&nbsp;
+            %span.argument<>
+              %span.keyword.color<> red
+            \,&nbsp;
+            %span.argument<>
+              %span.color<> rgba(255,0,0,0)
+          %span<> )
+      \;<br>
+    \}
+&nbsp;
+%span.statement.at-rule.rule-set.media-query<>
+  \@media&nbsp;
+  %span.media-query-list<>
+    %span.keyword<> only
+    &nbsp;
+    %span.media-type<> screen
+    &nbsp;
+    %span.keyword<> and
+    &nbsp;
+    %span.expression<>
+      \(
+      %span.media-feature<> min-width
+      \:&nbsp;
+      %span.value<>
+        %span.length<>
+          %span.number<> 35
+          %span.unit<> em
+      \)
+  %span.block<>
+    \{<br>
+    %span.statement.rule-set<>
+      %span.selector<>
+        %span.simple-selector.id-selector<> #content
+      %span.block.declaration-block<>
+        \{<br>
+        %span.declaration<>
+          %span.property<> width
+          \:&nbsp;
+          %span.value<>
+            %span.percentage<>
+              %span.number<> 50
+              %span<> %
+          \;<br>
+        }
+    \}
+&nbsp;
+%span.statement.rule-set<>
+  %span.selector<>
+    %span.simple-selector.class-selector<> .item
+    &nbsp;
+    %span.combinator.adjacent-sibling-combinator<> +
+    &nbsp;
+    %span.simple-selector.class-selector<> .item
+  %span<> ,<br>
+  %span.selector<>
+    %span.simple-selector.class-selector<> .item
+    &nbsp;
+    %span.combinator.general-sibling-combinator<> ~
+    &nbsp;
+    %span.simple-selector.class-selector<> .item
+  %span.block.declaration-block<>
+    \{<br>
+    %span.declaration<>
+      %span.property<> margin-left
+      \:&nbsp;
+      %span.value<>
+        %span.length<>
+          %span.number<> -15
+          %span.unit<> px
+      \;<br>
+    \}
+&nbsp;
+%span.statement.rule-set<>
+  %span.selector<>
+    %span.simple-selector.id-selector<> #buttons
+    &nbsp;
+    %span.simple-selector.class-selector<> .lotsofcontent
+  %span<> ,<br>
+  %span.selector<>
+    %span.simple-selector.id-selector<> #buttons
+    &nbsp;
+    %span.combinator.child-combinator<> &gt;
+    &nbsp;
+    %span.simple-selector.universal-selector<> *
+  %span<> ,<br>
+  %span.selector<>
+    %span.simple-selector.type-selector<> input
+    %span.simple-selector.attribute-selector<> [type=submit]
+  %span.block.declaration-block<>
+    \{<br>
+    %span.declaration<>
+      %span.property<> border-radius
+      \:&nbsp;
+      %span.value<>
+        %span.length<>
+          %span.number<> .3
+          %span.unit<> rem
+      \;<br>
+    \}
+&nbsp;
+%span.statement.rule-set<>
+  %span.selector<>
+    %span.simple-selector.type-selector<> a
+    %span.simple-selector.pseudo-class<> :hover
+  %span<> ,<br>
+  %span.selector<>
+    %span.simple-selector.type-selector<> a
+    %span.simple-selector.pseudo-class<> :focus
+  %span.block.declaration-block<>
+    \{<br>
+    %span.declaration<>
+      %span.property<> color
+      \:&nbsp;
+      %span.value<>
+        %span.keyword.color<> green
+      \;<br>
+    \}
+&nbsp;
+%span.statement.rule-set<>
+  %span.selector<>
+    %span.simple-selector.type-selector<> blockquote
+    %span.pseudo-element<> ::before
+  %span<> ,<br>
+  %span.selector<>
+    %span.simple-selector.type-selector<> blockquote
+    %span.pseudo-element<> ::after
+  %span.block.declaration-block<>
+    \{<br>
+    %span.declaration<>
+      %span.property<> content
+      \:&nbsp;
+      %span.value<>
+        %span.string<> "\201d"
+      \;<br>
+    \}
+&nbsp;

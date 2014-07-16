@@ -1,9 +1,17 @@
 .vocab-code {
+  /* The sample code should probably not wrap */
   white-space: pre;
-	.element {
+
+  /* Make things that need their own row a block */
+  .token-name {
     display: block;
   }
-	.start-tag {}
-	.end-tag {}
-	.attribute {}
+
+  /* Give the bits of syntax to relevant token */
+  .token-name::before {
+    content: ' ';
+  }
+  .token-name::after {
+    content: ' ';
+  }
 }

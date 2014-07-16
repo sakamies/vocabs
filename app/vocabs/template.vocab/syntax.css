@@ -1,0 +1,11 @@
+.vocab-code {
+  /* The sample code should probably not wrap */
+  white-space: pre;
+  /* Make things that need their own row a block */
+  /* Give the bits of syntax to relevant token */ }
+  .vocab-code .token-name {
+    display: block; }
+  .vocab-code .token-name::before {
+    content: ' '; }
+  .vocab-code .token-name::after {
+    content: ' '; }
