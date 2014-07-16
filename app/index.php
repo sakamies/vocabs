@@ -1,3 +1,7 @@
+<?php
+  $path = '';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,47 +36,35 @@
         <br>
         <br>
         <hr>
-        <h2 id="css-vocabs">CSS</h2>
-        <table>
-          <tr>
-            <td>
-              <a href="/css/en">CSS Vocabulary</a>
-            </td>
-            <td>
-              English / <a href="">@sakamies</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/css/fr">Lexique CSS</a>
-            </td>
-            <td>
-              Français / <a href="">@citymont</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/css/fi">CSS Sanasto</a>
-            </td>
-            <td>
-              Suomi / <a href="">@sakamies</a>
-            </td>
-          </tr>
-        </table>
-        <br>
-        <h2 id="html-vocabs">HTML</h2>
-        <table>
-          <tr>
-            <td>
-              <a href="/css/en">HTML Vocabulary</a>
-            </td>
-            <td>
-              English
-              / <a href="">@sakamies</a>
-            </td>
-          </tr>
-        </table>
-        <br>
+        <?php
+          //TODO parse vocabs.json for the list of vocabs
+          $vocabsJSON = file_get_contents("vocabs/vocabs.json");
+          $vocabs = json_decode($vocabsJSON,true);
+
+          foreach ($vocabs as $vocabName => $vocab) {
+            echo '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
+            echo '<table class="vocab-links">';
+
+            foreach ($vocab as $locale => $bundle) {
+              $url = $path . '/' . $vocabName . '/' . $locale;
+              $title = $bundle['title'];
+              $language = $bundle['language'];
+              echo '<tr>';
+              echo '<td class="vocab-link-link"><a href="'.$url.'">'.$title.'</a></td>';
+              echo '<td class="vocab-link-language">'.$language.'</td>';
+
+              echo '<td class="vocab-link-authors">';
+              foreach ($bundle['credits'] as $authorName => $authorURL) {
+                echo '<a href="'.$authorURL.'">'.$authorName.'</a> ';
+              }
+              echo '</td>';
+
+              echo '</tr>';
+            }
+
+            echo '</table>';
+          }
+        ?>
         <hr>
         <br>
         <a href="https://github.com/sakamies/css-vocabulary/issues/new">
