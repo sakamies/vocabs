@@ -17,7 +17,7 @@
 <head>
   <meta charset="utf-8" />
   <title>
-    Vocabs for Devs
+    <?php echo $pageTitle ?>
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
   <link rel="icon" href="img/favicon.png">
@@ -41,13 +41,12 @@
         </h1>
         <div>
           <?php echo $pageHelp ?>
+          <br>
+          <br>
+          <button class="vocab-help-hide">
+            <?php echo $pageHelpHide ?>
+          </button>
         </div>
-        <br>
-        <br>
-        <button class="vocab-help-hide">
-          <?php echo $pageHelpHide ?>
-        </button>
-        <br>
         <br>
         <hr>
         <?php
@@ -93,7 +92,7 @@
     <div class="vocab-sidebar">
       <div class="vocab-list-header">
         <h1 class="vocab-title">
-          CSS Vocabulary
+          <?php echo $pageTitle ?>
         </h1>
       </div>
       <button class="vocab-help-show">?</button>
