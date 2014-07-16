@@ -21,7 +21,7 @@ $hiGreen: hsl(70, 100%, 50%);
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.4286em;
+  line-height: 1.5em;
   overflow: hidden;
   color: #dedede;
   background: hsl(0, 0%, 20%);
@@ -152,11 +152,27 @@ textarea:focus {
   box-shadow: 0px 2px 5px black(.6);
   border-radius: 5px;
 }
-.vocab-help table {
-  text-align: left;
-  margin: auto;
-}
 .vocab-help-hide {
+}
+
+.vocab-links {
+  text-align: left;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+
+  td {
+    padding: 4px 5px 5px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+.vocab-link-language {
+  color: rgba(#333, .6);
+}
+.vocab-links + .vocab-links-title {
+  margin-top: 10px;
 }
 
 
@@ -223,7 +239,7 @@ textarea:focus {
 }
 
 .vocab-list {
-  line-height: 1.2em;
+  line-height: 1.5em;
   padding-bottom: 10px;
 }
   .vocab-list li {
@@ -249,7 +265,7 @@ textarea:focus {
 
 
 .vocab-code {
-  line-height: 1.2em;
+  line-height: 1.5em;
   display: block;
   white-space: nowrap;
   width: auto;

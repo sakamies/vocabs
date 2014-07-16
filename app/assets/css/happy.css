@@ -12,7 +12,7 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.4286em;
+  line-height: 1.5em;
   overflow: hidden;
   color: #dedede;
   background: #333333;
@@ -129,9 +129,21 @@ input:focus, button:focus, select:focus, textarea:focus {
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
   border-radius: 5px; }
 
-.vocab-help table {
+.vocab-links {
   text-align: left;
-  margin: auto; }
+  margin: 0 auto 20px auto;
+  border-collapse: collapse; }
+  .vocab-links td {
+    padding: 4px 5px 5px 5px;
+    border-bottom: 1px solid #ccc; }
+  .vocab-links tr:last-child td {
+    border-bottom: none; }
+
+.vocab-link-language {
+  color: rgba(51, 51, 51, 0.6); }
+
+.vocab-links + .vocab-links-title {
+  margin-top: 10px; }
 
 .vocab-sidebar {
   position: absolute;
@@ -194,7 +206,7 @@ input:focus, button:focus, select:focus, textarea:focus {
           box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
 
 .vocab-list {
-  line-height: 1.2em;
+  line-height: 1.5em;
   padding-bottom: 10px; }
 
 .vocab-list li {
@@ -217,7 +229,7 @@ input:focus, button:focus, select:focus, textarea:focus {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
 
 .vocab-code {
-  line-height: 1.2em;
+  line-height: 1.5em;
   display: block;
   white-space: nowrap;
   width: auto;
