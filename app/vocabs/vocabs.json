@@ -4,7 +4,7 @@
       "language": "English",
       "title": "CSS Vocabulary",
       "help": "Click on the code or the sidebar to see which is what.<br>Use the Tab key to browse via keyboard.",
-      "close-help": "Close help",
+      "help-hide": "Close help",
       "credits": {
         "@sakamies": "http://twitter.com/sakamies"
       }
@@ -13,7 +13,7 @@
       "language": "French",
       "title": "Lexique CSS",
       "help": "",
-      "close-help": "",
+      "help-hide": "",
       "credits": {
         "@citymont": "http://twitter.com/citymont"
       }
@@ -22,7 +22,7 @@
       "language": "Svensk",
       "title": "CSS Vokabulär",
       "help": "Klicka i koden eller i listan på sidan för att se vad som är vad. <br>Använd TAB för att navigra med tangentbordet.",
-      "close-help": "",
+      "help-hide": "",
       "credits": {
         "@enjikaka": "http://twitter.com/enjikaka"
       }
@@ -33,7 +33,7 @@
       "language": "English",
       "title": "HTML Vocabulary",
       "help": "Click on the code or the sidebar to see which is what.<br>Use the Tab key to browse via keyboard.",
-      "close-help": "Close help",
+      "help-hide": "Close help",
       "credits": {
         "@sakamies": "http://twitter.com/sakamies"
       }
