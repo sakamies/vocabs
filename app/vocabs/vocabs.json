@@ -3,14 +3,14 @@
     "en": {
       "language": "English",
       "title": "CSS Vocabulary",
-      "help": "Click on the code or the sidebar to see which is what.<br>Use the Tab key to browse via keyboard.",
+      "help": "Click on the code or the sidebar to see which is what. Use the Tab key to browse via keyboard.",
       "help-hide": "Close help",
       "credits": {
         "@sakamies": "http://twitter.com/sakamies"
       }
     },
     "fr": {
-      "language": "French",
+      "language": "Français",
       "title": "Lexique CSS",
       "help": "",
       "help-hide": "",
@@ -21,7 +21,7 @@
     "se": {
       "language": "Svensk",
       "title": "CSS Vokabulär",
-      "help": "Klicka i koden eller i listan på sidan för att se vad som är vad. <br>Använd TAB för att navigra med tangentbordet.",
+      "help": "Klicka i koden eller i listan på sidan för att se vad som är vad. Använd TAB för att navigra med tangentbordet.",
       "help-hide": "",
       "credits": {
         "@enjikaka": "http://twitter.com/enjikaka"
@@ -32,7 +32,7 @@
     "en": {
       "language": "English",
       "title": "HTML Vocabulary",
-      "help": "Click on the code or the sidebar to see which is what.<br>Use the Tab key to browse via keyboard.",
+      "help": "Click on the code or the sidebar to see which is what. Use the Tab key to browse via keyboard.",
       "help-hide": "Close help",
       "credits": {
         "@sakamies": "http://twitter.com/sakamies"

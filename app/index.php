@@ -25,6 +25,8 @@
 
   <div class="vocab-modal">
     <div class="vocab-help">
+      <h1>Vocab Spy</h1>
+      <hr>
       <?php
         //TODO parse vocabs.json for the list of vocabs
 
