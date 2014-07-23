@@ -1,9 +1,61 @@
+@import '../../assets/scss/monokai';
+
 .vocab-code {
   white-space: pre;
-	.element {
+
+  /* Structure */
+  .doctype,
+  .element,
+  .children,
+  .siblings,
+  .element > .text {
     display: block;
   }
-	.start-tag {}
-	.end-tag {}
-	.attribute {}
+
+  .children {
+    margin-left: .75em;
+    padding-left: .75em;
+  }
+  .element > .text {
+    margin-left: 1.5em;
+  }
+
+  /* Make elements collapse to their content width */
+  .comment,
+  .element,
+  .siblings {
+    clear: both;
+    float: left;
+  }
+  .siblings::before,
+  .siblings::after,
+  .children::before,
+  .children::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .tag {
+    clear: both;
+  }
+
+  /* Colors */
+  .comment {
+    color: $gray;
+  }
+  .doctype {
+    color: $red;
+  }
+  .tag-name {
+    color: $red;
+  }
+  .attribute-name {
+    color: $green;
+  }
+  .attribute-value {
+    color: $yellow;
+  }
+  .character-reference {
+    color: $purple;
+  }
 }

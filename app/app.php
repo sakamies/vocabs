@@ -1,15 +1,54 @@
 <?php
   $path = '';
-  $vocabsJSON = file_get_contents("vocabs/vocabs.json");
+  $vocabsJSON = file_get_contents('vocabs/vocabs.json');
   $vocabs = json_decode($vocabsJSON,true);
-  //TODO: read vocab & locale variables from url
+
   //Read page title and stuff from vocabs.json according to bundle & locale
   $vocabName = filter_input(INPUT_GET, 'vocabBundle', FILTER_SANITIZE_STRING);
   $locale = filter_input(INPUT_GET, 'locale', FILTER_SANITIZE_STRING);
+
+  //Beyond these lines, it should be safe to use $vocabName & $locale in any output
+  $vocabExists = array_key_exists($vocabName, $vocabs);
+  $hasLocale = array_key_exists($locale, $vocabs[$vocabName]);
+  if (!$vocabExists || !$hasLocale) {
+    header('HTTP/1.0 404 Not Found');
+    echo '<h2>404 Not Found</h2>';
+    echo '<h1><a href="/">Vocabs</a></h1>';
+    echo '<a href="https://github.com/sakamies/css-vocabulary/fork">Create a vocab or translation</a>';
+    exit();
+  }
+
   $pageVocab = $vocabs[$vocabName][$locale];
   $pageTitle = $pageVocab['title'];
-  $pageHelp = $pageVocab['help'];
-  $pageHelpHide = $pageVocab['help-hide'];
+  $pageHelpText = $pageVocab['help-text'];
+
+
+  function echoVocabsList($vocabs) {
+    foreach ($vocabs as $vocabName => $vocab) {
+      echo '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
+      echo '<table class="vocab-links">';
+
+      foreach ($vocab as $locale => $translation) {
+        $url = $path . '/' . $vocabName . '/' . $locale;
+        $title = $translation['title'];
+        $language = $translation['language'];
+        echo '<tr>';
+        echo '<td class="vocab-link-link"><a href="'.$url.'">'.$title.'</a></td>';
+        echo '<td class="vocab-link-language">'.$language.'</td>';
+
+        echo '<td class="vocab-link-authors">';
+        foreach ($translation['credits'] as $author => $authorURL) {
+          echo '<a href="'.$authorURL.'">'.$author.'</a> ';
+        }
+        echo '</td>';
+
+        echo '</tr>';
+      }
+
+      echo '</table>';
+    }
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -20,62 +59,54 @@
     <?php echo $pageTitle ?>
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
+
   <link rel="icon" href="img/favicon.png">
   <link href="/assets/css/happy.css" rel="stylesheet">
+
+  <style id="syntax-style">
+    <?php readfile('vocabs/'.$vocabName.'.vocab/syntax.css'); ?>
+  </style>
+
   <script src="/assets/lib/jquery-2.0.3.min.js"></script>
   <script src="/assets/lib/jquery.cookie.js"></script>
   <script src="/assets/lib/keymaster.js"></script>
 
-  <script src="/assets/js/happy-fun.js"></script>
-  <script src="/assets/js/happy-life.js"></script>
+  <script id="vocab">
+    app = {};
+    <?php
+      echo 'app.vocab =';
+      readfile('vocabs/'.$vocabName.'.vocab/vocab-'.$locale.'.json');
+      echo ';';
+      echo 'app.vocabName = "'.$vocabName.'";';
+      echo 'app.locale = "'.$locale.'";';
+    ?>
+  </script>
 
-  <link id="syntax-style" href="" rel="stylesheet">
+  <script src="/assets/js/happy.js"></script>
 
 </head>
 <body class="">
   <div class="vocab-layout">
     <div class="vocab-modal">
-      <div class="vocab-help">
+      <?php
+        $showHelp = htmlspecialchars($_COOKIE['showHelp']);
+        $helpState = '';
+        if ($showHelp == 'false') {
+          $helpState = 'display: none;';
+        }
+      ?>
+      <div class="vocab-help" style="<?php echo $helpState ?>">
         <h1 class="vocab-title">
           <?php echo $pageTitle ?>
         </h1>
-        <div>
-          <?php echo $pageHelp ?>
-          <br>
-          <br>
-          <button class="vocab-help-hide">
-            <?php echo $pageHelpHide ?>
-          </button>
-        </div>
+        <?php echo $pageHelpText ?>
+        <br>
+        <button class="vocab-help-hide" title="Close help"></button>
         <br>
         <hr>
-        <?php
-          //TODO parse vocabs.json for the list of vocabs
 
-          foreach ($vocabs as $vocabName => $vocab) {
-            echo '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
-            echo '<table class="vocab-links">';
+        <?php echoVocabsList($vocabs); ?>
 
-            foreach ($vocab as $locale => $bundle) {
-              $url = $path . '/' . $vocabName . '/' . $locale;
-              $title = $bundle['title'];
-              $language = $bundle['language'];
-              echo '<tr>';
-              echo '<td class="vocab-link-link"><a href="'.$url.'">'.$title.'</a></td>';
-              echo '<td class="vocab-link-language">'.$language.'</td>';
-
-              echo '<td class="vocab-link-authors">';
-              foreach ($bundle['credits'] as $authorName => $authorURL) {
-                echo '<a href="'.$authorURL.'">'.$authorName.'</a> ';
-              }
-              echo '</td>';
-
-              echo '</tr>';
-            }
-
-            echo '</table>';
-          }
-        ?>
         <hr>
         <br>
         <a href="https://github.com/sakamies/css-vocabulary/issues/new">
@@ -85,7 +116,7 @@
         <a href="https://github.com/sakamies/css-vocabulary/fork">Create a vocab or translation</a>
         <br>
         <br>
-        Vocab spy by <a href="http://twitter.com/sakamies">@sakamies</a>
+        Vocabs by <a href="http://twitter.com/sakamies">@sakamies</a>
         <br>
       </div>
     </div>
@@ -96,14 +127,21 @@
         </h1>
       </div>
       <button class="vocab-help-show">?</button>
-      <ul class="vocab-list"></ul>
+      <ul class="vocab-list">
+        <?php
+
+          $vocabListPath = 'vocabs/'.$vocabName.'.vocab/vocab-'.$locale.'.json';
+          $vocabList = file_get_contents($vocabListPath);
+          $vocabList = json_decode($vocabList,true);
+          foreach ($vocabList[tokens] as $key => $token) {
+            echo '<li><a class="vocab-token '.$token['name'].'" href="'.$token['url'].'">'.$token['text'].'</a></li>';
+          }
+
+         ?>
+      </ul>
     </div>
     <div class="vocab-content">
-      <code class="vocab-code">
-        <span class="vocab-token fallback-bundle" tabindex="0">Fallback</span>
-        <br>
-        <span class="vocab-token token-name" tabindex="0">content</span>
-      </code>
+      <code class="vocab-code"><?php readfile('vocabs/'.$vocabName.'.vocab/sample.html'); ?></code>
     </div>
   </div>
 </body>

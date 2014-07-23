@@ -1,31 +1,18 @@
 {
-  "title": "Test",
-  "language": "English",
-  "credits": [
-    {
-      "name": "@bratwurstkomettiger",
-      "url": "http://twitter.com/xyzjelwrkjdf"
-    }
-  ],
   "tokens": [
     {
-      "name": "element",
-      "text": "Element",
+      "name": "block-type-token",
+      "text": "Block type token",
       "url": ""
     },
     {
-      "name": "start-tag",
-      "text": "Start tag",
+      "name": "something-else",
+      "text": "Something else",
       "url": ""
     },
     {
-      "name": "end-tag",
-      "text": "End tag",
-      "url": ""
-    },
-    {
-      "name": "attribute",
-      "text": "Attribute",
+      "name": "other",
+      "text": "Other",
       "url": ""
     }
   ]

@@ -1,3 +1,17 @@
+/* UI higlight */
+.vocab-token:focus {
+  outline: none; }
+
+.vocab-hilite {
+  background: rgba(166, 226, 45, 0.07);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
+
+.vocab-selected {
+  background: rgba(166, 226, 45, 0.16);
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white; }
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -13,7 +27,6 @@ body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  overflow: hidden;
   color: #dedede;
   background: #333333;
   background-repeat: repeat;
@@ -48,7 +61,7 @@ h1 {
   line-height: 0.85em;
   text-transform: lowercase;
   font-variant: small-caps;
-  margin: 10px 0px 30px 0; }
+  margin: 10px 0px 20px 0; }
 
 h2 {
   font-weight: 400;
@@ -80,30 +93,40 @@ input, button, select, textarea {
   -webkit-font-smoothing: inherit; }
 
 input[type=submit], button {
+  line-height: 1em;
   display: inline-block;
   vertical-align: baseline;
+  height: 1.6rem;
+  padding: 0rem 0.5rem;
+  margin: 0;
   color: #3c8caf;
   -webkit-box-shadow: 0 0 0 1px #3c8caf;
           box-shadow: 0 0 0 1px #3c8caf;
   background: transparent;
-  border-radius: 3px;
-  height: 1.6rem;
-  padding: 0rem 0.5rem;
-  margin: -10px 0; }
+  border-radius: 3px; }
 
 select {
   -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
 
 input[type=submit]:active, button:active {
-  background: rgba(127, 153, 0, 0.7); }
+  background: rgba(59, 140, 174, 0.5); }
 
 input:focus, button:focus, select:focus, textarea:focus {
-  background: rgba(127, 153, 0, 0.5);
   background: rgba(59, 140, 174, 0.5);
   -webkit-box-shadow: 0px 0px 0px 1px #3c8caf;
           box-shadow: 0px 0px 0px 1px #3c8caf;
   outline: none; }
+
+.vocab-index {
+  padding: 20px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.92); }
+
+.vocab-help {
+  text-align: center;
+  width: 430px;
+  margin: auto; }
 
 .vocab-modal {
   position: absolute;
@@ -113,21 +136,38 @@ input:focus, button:focus, select:focus, textarea:focus {
   right: 10px;
   height: 0px;
   bottom: auto; }
+  .vocab-modal .vocab-help {
+    position: relative;
+    overflow: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 20px;
+    color: #333;
+    background: #eee;
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 5px; }
 
-.vocab-help {
-  text-align: center;
-  position: relative;
-  overflow: auto;
-  width: 430px;
-  max-width: 90vw;
-  max-height: 90vh;
-  margin: auto;
-  padding: 20px;
-  color: #333;
-  background: rgba(255, 255, 255, 0.92);
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
-  border-radius: 5px; }
+.vocab-help-hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 10px;
+  padding: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0.802493164,7.40540332 L1.57049316,8.17340332 L4.48249316,5.26140332 L7.37849316,8.17340332 L8.14649316,7.40540332 L5.25049316,4.49340332 L8.13049316,1.61340332 L7.36249316,0.84540332 L4.48249316,3.72540332 L1.58649316,0.84540332 L0.818493164,1.61340332 L3.71449316,4.49340332 L0.802493164,7.40540332 Z" fill="hsl(198, 49%, 46%)"></path></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 10px 10px;
+          background-size: 10px 10px; }
+
+.vocab-help-hide:focus, .vocab-help-hide:active {
+  background-image: url('data:image/svg+xml;utf8,<svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0.802493164,7.40540332 L1.57049316,8.17340332 L4.48249316,5.26140332 L7.37849316,8.17340332 L8.14649316,7.40540332 L5.25049316,4.49340332 L8.13049316,1.61340332 L7.36249316,0.84540332 L4.48249316,3.72540332 L1.58649316,0.84540332 L0.818493164,1.61340332 L3.71449316,4.49340332 L0.802493164,7.40540332 Z" fill="white"></path></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 10px 10px;
+          background-size: 10px 10px; }
 
 .vocab-links {
   text-align: left;
@@ -151,17 +191,15 @@ input:focus, button:focus, select:focus, textarea:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 320px;
+  width: 340px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: right 0.5s ease;
-          transition: right 0.5s ease; }
+  -webkit-overflow-scrolling: touch; }
 
 .vocab-sidebar.vocab-focus {
-  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(212, 255, 0, 0.7), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0px 3px 0px 0px rgba(212, 255, 0, 0.7), 0px 0px 5px 0px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: inset 0px 3px 0px 0px #a6e22d, 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 3px 0px 0px #a6e22d, 0px 0px 5px 0px rgba(0, 0, 0, 0.5); }
 
 .vocab-content {
   position: absolute;
@@ -169,15 +207,13 @@ input:focus, button:focus, select:focus, textarea:focus {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 320px;
+  right: 340px;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: right 0.5s ease;
-          transition: right 0.5s ease; }
+  -webkit-overflow-scrolling: touch; }
 
 .vocab-content.vocab-focus {
-  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(212, 255, 0, 0.7);
-          box-shadow: inset 0px 3px 0px 0px rgba(212, 255, 0, 0.7); }
+  -webkit-box-shadow: inset 0px 3px 0px 0px #a6e22d;
+          box-shadow: inset 0px 3px 0px 0px #a6e22d; }
 
 .vocab-list-header {
   padding: 10px 10px 10px 10px; }
@@ -185,7 +221,6 @@ input:focus, button:focus, select:focus, textarea:focus {
 .vocab-list-header:after {
   content: '';
   display: block;
-  margin: 0px 0px 5px 0px;
   border: 1px solid currentColor;
   border-width: 1px 0px 0px 0px;
   opacity: 0.5; }
@@ -193,7 +228,6 @@ input:focus, button:focus, select:focus, textarea:focus {
 .vocab-help-show {
   position: absolute;
   top: 14px;
-  line-height: 1em;
   right: 0;
   z-index: 900;
   width: 1.5em;
@@ -201,32 +235,40 @@ input:focus, button:focus, select:focus, textarea:focus {
   margin: 10px;
   padding: 0;
   color: rgba(255, 255, 255, 0.5);
-  background: transparent;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
 
 .vocab-list {
   line-height: 1.5em;
-  padding-bottom: 10px; }
-
-.vocab-list li {
-  display: block;
-  list-style: none; }
-
-.vocab-list a {
-  display: block;
-  padding: 3px 10px 3px 10px;
-  color: inherit; }
-
-.vocab-list :hover {
-  background: rgba(127, 153, 0, 0.07); }
-
-.vocab-list :focus {
-  outline: none; }
-
-.vocab-list .vocab-hilite {
-  background: rgba(127, 153, 0, 0.7);
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+  padding: 10px; }
+  .vocab-list li {
+    display: block;
+    list-style: none; }
+  .vocab-list a {
+    display: block;
+    padding: 3px 10px 3px 10px;
+    margin-bottom: 1px;
+    color: inherit; }
+  .vocab-list .vocab-hilite {
+    background: rgba(166, 226, 45, 0.2);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.6);
+            box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); }
+  .vocab-list .vocab-selected {
+    background: rgba(166, 226, 45, 0.4);
+    -webkit-box-shadow: 0px 0px 0px 1px white;
+            box-shadow: 0px 0px 0px 1px white;
+    text-shadow: 0px 1px 2px black; }
+  .vocab-list :focus {
+    outline: none; }
+  .vocab-list .vocab-list-subtitle {
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    padding: 3px 10px 3px 10px;
+    margin-bottom: 1px;
+    color: rgba(255, 255, 255, 0.3); }
 
 .vocab-code {
   line-height: 1.5em;
@@ -234,30 +276,7 @@ input:focus, button:focus, select:focus, textarea:focus {
   white-space: nowrap;
   width: auto;
   margin: auto;
-  padding: 10px;
-  color: rgba(255, 255, 255, 0.6);
-  color: white; }
+  padding: 10px; }
 
 .vocab-token {
-  border-radius: 2px; }
-
-.vocab-code .vocab-hilite {
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-  color: white;
-  background: rgba(169, 204, 0, 0.1);
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(169, 204, 0, 0.7);
-          box-shadow: 0px 0px 0px 1px rgba(169, 204, 0, 0.7);
-  -webkit-transition: none;
-          transition: none; }
-
-.vocab-code .vocab-selected {
-  /*transition: all 0s linear;*/
-  color: white;
-  background: rgba(127, 153, 0, 0.6);
-  -webkit-box-shadow: 0px 0px 0px 1px #aacc00;
-          box-shadow: 0px 0px 0px 1px #aacc00;
-  -webkit-transition: none;
-          transition: none; }
-
-.vocab-code :focus {
-  outline: none; }
+  border-radius: 3px; }

@@ -1,6 +1,52 @@
+/* UI higlight */
+.vocab-token:focus {
+  outline: none; }
+
+.vocab-hilite {
+  background: rgba(166, 226, 45, 0.07);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
+
+.vocab-selected {
+  background: rgba(166, 226, 45, 0.16);
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white; }
+
 .vocab-code {
-  white-space: pre; }
+  white-space: pre;
+  /* Structure */
+  /* Colors */ }
   .vocab-code .comment, .vocab-code .statement, .vocab-code .block {
     display: block; }
   .vocab-code .block > * {
     margin-left: 1.5em; }
+  .vocab-code .comment {
+    color: #75715e; }
+  .vocab-code .at-keyword {
+    color: #f92772; }
+  .vocab-code .string {
+    color: #e6db74; }
+  .vocab-code .type-selector {
+    color: #f92772; }
+  .vocab-code .id-selector {
+    color: #f6aa10; }
+  .vocab-code .class-selector {
+    color: #a6e22d; }
+  .vocab-code .attribute-selector {
+    color: #e6db74; }
+  .vocab-code .pseudo-class {
+    color: #a6e22d; }
+  .vocab-code .pseudo-element {
+    color: #a6e22d; }
+  .vocab-code .property {
+    color: #66d9ef; }
+  .vocab-code .percentage, .vocab-code .unit {
+    color: #f92772; }
+  .vocab-code .number {
+    color: #be84ff; }
+  .vocab-code .keyword {
+    color: #66d9ef; }
+  .vocab-code .color {
+    color: #66d9ef; }
+  .vocab-code .arguments {
+    color: #be84ff; }

@@ -1,11 +1,26 @@
+/* UI higlight */
+.vocab-token:focus {
+  outline: none; }
+
+.vocab-hilite {
+  background: rgba(166, 226, 45, 0.07);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
+
+.vocab-selected {
+  background: rgba(166, 226, 45, 0.16);
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white; }
+
 .vocab-code {
-  /* The sample code should probably not wrap */
   white-space: pre;
-  /* Make things that need their own row a block */
-  /* Give the bits of syntax to relevant token */ }
-  .vocab-code .token-name {
+  /* Structure */
+  /* Colors */ }
+  .vocab-code .block-type-token, .vocab-code .something-else {
     display: block; }
-  .vocab-code .token-name::before {
-    content: ' '; }
-  .vocab-code .token-name::after {
-    content: ' '; }
+  .vocab-code .block-type-token {
+    color: #f92772; }
+  .vocab-code .something-else {
+    color: #a6e22d; }
+  .vocab-code .other {
+    color: #f92772; }

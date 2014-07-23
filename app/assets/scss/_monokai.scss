@@ -1,0 +1,29 @@
+@function black($opacity) {
+  @return rgba(0,0,0,$opacity);
+}
+@function white($opacity) {
+  @return rgba(255,255,255,$opacity);
+}
+
+$bg: #272822;
+$white: #f8f8f2;
+$gray: #75715e;
+$red: #f92772;
+$purple: #be84ff;
+$green: #a6e22d;
+$yellow: #e6db74;
+$orange: #f6aa10;
+$blue: #66d9ef;
+
+/* UI higlight */
+.vocab-token:focus {
+  outline: none;
+}
+.vocab-hilite {
+  background: rgba($green, .07);
+  box-shadow: 0px 0px 0px 1px rgba(white, .5);
+}
+.vocab-selected {
+  background: rgba($green, .16);
+  box-shadow: 0px 0px 0px 1px rgba(white, 1);
+}

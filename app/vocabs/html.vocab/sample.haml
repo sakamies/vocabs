@@ -1,19 +1,112 @@
-%span.comment This is a comment
+%span.doctype<> &lt;!DOCTYPE html&gt;
+%span.element.root.parent<>
+  %span.tag.start-tag<>
+    \<
+    %span.tag-name<> html
+    \>
+  %span.children
+    %span.element.parent.child<>
+      %span.tag.start-tag<>
+        \<
+        %span.tag-name<> head
+        \>
+      %span.children<>
+        %span.siblings<>
+          %span.element.child.sibling<>
+            %span.tag.start-tag<>
+              \<
+              %span.tag-name<> title
+              \>
+            %span.text<> HTML Vocabulary Example
+            %span.tag.end-tag<>
+              \<&#47;
+              %span.tag-name<> title
+              \>
+          %span.element.child.sibling<>
+            %span.tag.start-tag<>
+              \<
+              %span.tag-name<> link
+              &nbsp;
+              %span.attributes<>
+                %span.attribute<>
+                  %span.attribute-name<> rel
+                  \="
+                  %span.attribute-value.text<> stylesheet
+                  \"
+                &nbsp;
+                %span.attribute<>
+                  %span.attribute-name<> href
+                  \="
+                  %span.attribute-value.text<> style.css
+                  \"
+              \>
+      %span.tag.end-tag<>
+        \<&#47;
+        %span.tag-name<> head
+        \>
+    %span.element.parent.child<>
+      %span.tag.start-tag<>
+        \<
+        %span.tag-name<> body
+        \>
+      %span.children<>
+        %span.comment<>
+          &lt;!--
+          %span.text<> Mumbo jumbo
+          \--&gt;
+        %span.siblings<>
+          %span.element.child.sibling<>
+            %span.tag.start-tag<>
+              \<
+              %span.tag-name<> p
+              \>
+            %span.text<> Lorem ipsum dolor sit amet.
+            %span.tag.end-tag<>
+              \<&#47;
+              %span.tag-name<> p
+              \>
+          %span.element.child.sibling<>
+            %span.tag.start-tag<>
+              \<
+              %span.tag-name<> div
+              &nbsp;
+              %span.attributes<>
+                %span.attribute<>
+                  %span.attribute-name<> class
+                  \="
+                  %span.attribute-value.text<> special
+                  \"
+                &nbsp;
+                %span.attribute<>
+                  %span.attribute-name<> contenteditable
+              \>
+            %span.text Etiam turpis <span class="character-reference">&amp;amp;</span> felis, porttitor vitae dapibus.
+            %span.tag.end-tag<>
+              \<&#47;
+              %span.tag-name<> div
+              \>
+          %span.element.child.sibling<>
+            %span.tag.start-tag<>
+              \<
+              %span.tag-name<> p
+              \>
+            %span.text<> In vulputate, tellus turpis euismod diam.
+            %span.tag.end-tag<>
+              \<&#47;
+              %span.tag-name<> p
+              \>
+      %span.tag.end-tag<>
+        \<&#47;
+        %span.tag-name<> body
+        \>
+  %span.tag.end-tag<>
+    \<&#47;
+    %span.tag-name<> html
+    \>
+<br>
 
-%span.element
-  %span.start-tag
-    %span.element-name div
-    %span.attributes
-      %span.attribute
-        %span.attribute-name class
-        %span.attribute-value father
-      %span.attribute
-        %span.attribute-name contenteditable
-    %span.children
-      %span.element.child Children and stuff go here
-  %span.end-tag
 
-/ Deeper stuff
-%span.root root?
-%span.parent parent?
-%span.parent what else?
+<br style="clear: both;">
+<br>
+<hr>
+<a href="http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax">HTML5 syntax specification</a>

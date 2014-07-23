@@ -1,6 +1,9 @@
+@import '../../assets/scss/monokai';
+
 .vocab-code {
 	white-space: pre;
 
+  /* Structure */
 	.comment,
 	.statement,
 	.block {
@@ -10,4 +13,52 @@
 	.block > * {
 		margin-left: 1.5em; // Should be 1*letter-x-width, is 1*line-height
 	}
+
+  /* Colors */
+  .comment {
+    color: $gray;
+  }
+  .at-keyword {
+    color: $red;
+  }
+  .string {
+    color: $yellow;
+  }
+  .type-selector {
+    color: $red;
+  }
+  .id-selector {
+    color: $orange;
+  }
+  .class-selector {
+    color: $green;
+  }
+  .attribute-selector {
+    color: $yellow;
+  }
+  .pseudo-class {
+    color: $green;
+  }
+  .pseudo-element {
+    color: $green;
+  }
+  .property {
+    color: $blue;
+  }
+  .percentage,
+  .unit {
+    color: $red;
+  }
+  .number {
+    color: $purple;
+  }
+  .keyword {
+    color: $blue;
+  }
+  .color {
+    color: $blue;
+  }
+  .arguments {
+    color: $purple;
+  }
 }

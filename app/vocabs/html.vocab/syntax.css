@@ -1,4 +1,47 @@
+/* UI higlight */
+.vocab-token:focus {
+  outline: none; }
+
+.vocab-hilite {
+  background: rgba(166, 226, 45, 0.07);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
+
+.vocab-selected {
+  background: rgba(166, 226, 45, 0.16);
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white; }
+
 .vocab-code {
-  white-space: pre; }
-  .vocab-code .element {
+  white-space: pre;
+  /* Structure */
+  /* Make elements collapse to their content width */
+  /* Colors */ }
+  .vocab-code .doctype, .vocab-code .element, .vocab-code .children, .vocab-code .siblings, .vocab-code .element > .text {
     display: block; }
+  .vocab-code .children {
+    margin-left: 0.75em;
+    padding-left: 0.75em; }
+  .vocab-code .element > .text {
+    margin-left: 1.5em; }
+  .vocab-code .comment, .vocab-code .element, .vocab-code .siblings {
+    clear: both;
+    float: left; }
+  .vocab-code .siblings::before, .vocab-code .siblings::after, .vocab-code .children::before, .vocab-code .children::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .vocab-code .tag {
+    clear: both; }
+  .vocab-code .comment {
+    color: #75715e; }
+  .vocab-code .doctype {
+    color: #f92772; }
+  .vocab-code .tag-name {
+    color: #f92772; }
+  .vocab-code .attribute-name {
+    color: #a6e22d; }
+  .vocab-code .attribute-value {
+    color: #e6db74; }
+  .vocab-code .character-reference {
+    color: #be84ff; }

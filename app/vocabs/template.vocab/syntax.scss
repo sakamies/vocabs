@@ -1,17 +1,22 @@
+@import '../../assets/scss/monokai';
+
 .vocab-code {
-  /* The sample code should probably not wrap */
   white-space: pre;
 
-  /* Make things that need their own row a block */
-  .token-name {
+  /* Structure */
+  .block-type-token,
+  .something-else {
     display: block;
   }
 
-  /* Give the bits of syntax to relevant token */
-  .token-name::before {
-    content: ' ';
+  /* Colors */
+  .block-type-token {
+    color: $red;
   }
-  .token-name::after {
-    content: ' ';
+  .something-else {
+    color: $green;
+  }
+  .other {
+    color: $red;
   }
 }

@@ -1,16 +1,28 @@
 {
-  "title": "HTML",
-  "language": "English",
-  "credits": [
-    {
-      "name": "@pasiaj",
-      "url": "http://twitter.com/pasiaj"
-    }
-  ],
   "tokens": [
+    {
+      "name": "vocab-list-subtitle",
+      "text": "Syntax",
+      "url": ""
+    },
+    {
+      "name": "doctype",
+      "text": "Doctype",
+      "url": ""
+    },
     {
       "name": "element",
       "text": "Element",
+      "url": ""
+    },
+    {
+      "name": "tag",
+      "text": "Tag",
+      "url": ""
+    },
+    {
+      "name": "tag-name",
+      "text": "Tag name",
       "url": ""
     },
     {
@@ -26,6 +38,66 @@
     {
       "name": "attribute",
       "text": "Attribute",
+      "url": ""
+    },
+    {
+      "name": "attribute-name",
+      "text": "Attribute name",
+      "url": ""
+    },
+    {
+      "name": "attribute-value",
+      "text": "Attribute value",
+      "url": ""
+    },
+    {
+      "name": "comment",
+      "text": "Comment",
+      "url": ""
+    },
+    {
+      "name": "text",
+      "text": "Text",
+      "url": ""
+    },
+    {
+      "name": "character-reference",
+      "text": "Character reference",
+      "url": ""
+    },
+    {
+      "name": "vocab-list-subtitle",
+      "text": "Structure",
+      "url": ""
+    },
+    {
+      "name": "root",
+      "text": "Root",
+      "url": ""
+    },
+    {
+      "name": "parent",
+      "text": "Parent",
+      "url": ""
+    },
+    {
+      "name": "children",
+      "text": "Children",
+      "url": ""
+    },
+    {
+      "name": "child",
+      "text": "Child",
+      "url": ""
+    },
+    {
+      "name": "siblings",
+      "text": "Siblings",
+      "url": ""
+    },
+    {
+      "name": "sibling",
+      "text": "Sibling",
       "url": ""
     }
   ]
