@@ -4,8 +4,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     haml: {
       vocabs: {
-        //TODO: how to remove all whitespace while compiling?
-        //options {remove_whitespace: true, ugly: true} didn't work
         files: [{
           expand: true,
           cwd: 'app/vocabs/',
