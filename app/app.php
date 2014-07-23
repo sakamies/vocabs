@@ -12,9 +12,7 @@
   $hasLocale = array_key_exists($locale, $vocabs[$vocabName]);
   if (!$vocabExists || !$hasLocale) {
     header('HTTP/1.0 404 Not Found');
-    echo '<h2>404 Not Found</h2>';
-    echo '<h1><a href="/">Vocabs</a></h1>';
-    echo '<a href="https://github.com/sakamies/css-vocabulary/fork">Create a vocab or translation</a>';
+    readfile('404.html');
     exit();
   }
 
