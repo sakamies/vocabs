@@ -21,7 +21,7 @@
   $pageHelpText = $pageVocab['help-text'];
 
 
-  function echoVocabsList($vocabs) {
+  function echoVocabsLinkList($vocabs) {
     foreach ($vocabs as $vocabName => $vocab) {
       echo '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
       echo '<table class="vocab-links">';
@@ -103,7 +103,7 @@
         <br>
         <hr>
 
-        <?php echoVocabsList($vocabs); ?>
+        <?php echoVocabsLinkList($vocabs); ?>
 
         <hr>
         <br>
