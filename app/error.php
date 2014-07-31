@@ -14,7 +14,7 @@
   <p>
     <a href="./">Index of Vocabs</a>
     <br>
-    <a href="https://github.com/sakamies/vocabs/fork">Create a vocab or
+    <a href="<?php echo $github ?>/fork">Create a vocab or
     translation</a>
   </p>
 </body>

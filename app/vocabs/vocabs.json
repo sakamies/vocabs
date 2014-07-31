@@ -6,6 +6,9 @@
       "help-text": "Click on the code or the sidebar to see which is what. Use the Tab key to browse via keyboard.",
       "credits": {
         "@sakamies": "http://twitter.com/sakamies"
+      },
+      "specs": {
+        "": ""
       }
     },
     "fr": {
@@ -14,6 +17,9 @@
       "help-text": "Click on the code or the sidebar to see which is what. Use the Tab key to browse via keyboard.",
       "credits": {
         "@citymont": "http://twitter.com/citymont"
+      },
+      "specs": {
+        "": ""
       }
     },
     "se": {
@@ -22,6 +28,9 @@
       "help-text": "Klicka i koden eller i listan på sidan för att se vad som är vad. Använd TAB för att navigra med tangentbordet.",
       "credits": {
         "@enjikaka": "http://twitter.com/enjikaka"
+      },
+      "specs": {
+        "": ""
       }
     }
   },
@@ -32,6 +41,9 @@
       "help-text": "Click on the code or the sidebar to see which is what. Use the Tab key to browse via keyboard.",
       "credits": {
         "@sakamies": "http://twitter.com/sakamies"
+      },
+      "specs": {
+        "HTML5 Syntax Specification": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
       }
     }
   }

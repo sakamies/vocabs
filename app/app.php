@@ -46,25 +46,23 @@
         <h1 class="vocab-title">
           <?php echo $title ?>
         </h1>
-        <?php echo $helpText ?>
+        <p class="vocab-credits"><?php echo $credits ?></p>
         <br>
+        <p class="vocab-help-text"><?php echo $helpText ?></p>
+        <br>
+        <?php echo $specs ?>
         <button class="vocab-help-hide" title="Close help"></button>
         <br>
         <hr>
-
-        <?php echoVocabsLinkList($vocabs); ?>
-
-        <hr>
         <br>
-        <a href="<php echo $github; >/issues/new">
-          Report an issue
-        </a>
+        <?php echo $reportIssue ?>
         <br>
-        <a href="<php echo $github; >/fork">Create a vocab or translation</a>
+        <?php echo $createVocab ?>
         <br>
         <br>
-        Vocabs by <a href="http://twitter.com/sakamies">@sakamies</a>
+        <?php echo $appCredits ?>
         <br>
+        <?php // echoVocabsLinkList($vocabs); ?>
       </div>
     </div>
     <div class="vocab-sidebar">
@@ -78,7 +76,7 @@
       <?php
         $vocabFile = 'vocabs/'.$vocabName.'.vocab/vocab-'.$locale.'.json';
         $vocab = json_decode(file_get_contents($vocabFile),true);
-        echoVocabTokensList($vocab);
+        echo vocabTokensList($vocab);
       ?>
 
     </div>

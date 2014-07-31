@@ -1,7 +1,7 @@
 {
   "tokens": [
     {
-      "name": "vocab-tokens-list-subtitle",
+      "name": "i",
       "text": "Syntax",
       "url": ""
     },
@@ -66,7 +66,7 @@
       "url": ""
     },
     {
-      "name": "vocab-tokens-list-subtitle",
+      "name": "i",
       "text": "Structure",
       "url": ""
     },

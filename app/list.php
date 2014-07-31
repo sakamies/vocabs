@@ -22,27 +22,15 @@
   <div class="vocab-help">
     <h1>Vocabs</h1>
     <hr>
-
-    <?php echoVocabsLinkList($vocabs); ?>
-
+    <?php echo vocabsLinkList($vocabs); ?>
     <hr>
     <br>
-    <a href="https://github.com/sakamies/css-vocabulary/issues/new">
-      Report an issue
-    </a>
+    <?php echo $reportIssue ?>
     <br>
-    <a href="https://github.com/sakamies/css-vocabulary/fork">
-      Create a vocab or translation
-    </a>
+    <?php echo $createVocab ?>
     <br>
     <br>
-    <a href="/">
-      Vocabs
-    </a>
-    app by
-    <a href="http://twitter.com/sakamies">
-      @sakamies
-    </a>
+    <?php echo $appCredits; ?>
     <br>
   </div>
 
