@@ -26,7 +26,7 @@ app.getTokenNames = function (element) {
 // Highlight token DOM elements that match the given array of token names
 app.hiliteTokens = function (tokenNames) {
   var codePals = '.vocab-code .' + tokenNames.join('.');
-  var vocabPals = '.vocab-list .' + tokenNames.join(', .vocab-list .');
+  var vocabPals = '.vocab-tokens-list .' + tokenNames.join(', .vocab-tokens-list .');
   $('.vocab-hilite').removeClass('vocab-hilite');
   $(codePals).addClass('vocab-hilite');
   $(vocabPals).addClass('vocab-hilite');
@@ -95,14 +95,14 @@ app.partyTime = function (vocab) {
 
   // Key bindings
   key('up', function(event){
-    var vocabFocus = $('.vocab-list :focus');
+    var vocabFocus = $('.vocab-tokens-list :focus');
     if (vocabFocus.length > 0) {
       event.preventDefault();
       vocabFocus.parent().prev().find('.vocab-token').focus();
     }
   });
   key('down', function(event){
-    var vocabFocus = $('.vocab-list :focus');
+    var vocabFocus = $('.vocab-tokens-list :focus');
     if (vocabFocus.length > 0) {
       event.preventDefault();
       vocabFocus.parent().next().find('.vocab-token').focus();

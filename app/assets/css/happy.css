@@ -215,10 +215,10 @@ input:focus, button:focus, select:focus, textarea:focus {
   -webkit-box-shadow: inset 0px 3px 0px 0px #a6e22d;
           box-shadow: inset 0px 3px 0px 0px #a6e22d; }
 
-.vocab-list-header {
+.vocab-tokens-list-header {
   padding: 10px 10px 10px 10px; }
 
-.vocab-list-header:after {
+.vocab-tokens-list-header:after {
   content: '';
   display: block;
   border: 1px solid currentColor;
@@ -238,30 +238,30 @@ input:focus, button:focus, select:focus, textarea:focus {
   -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
 
-.vocab-list {
+.vocab-tokens-list {
   line-height: 1.5em;
   padding: 10px; }
-  .vocab-list li {
+  .vocab-tokens-list li {
     display: block;
     list-style: none; }
-  .vocab-list a {
+  .vocab-tokens-list a {
     display: block;
     padding: 3px 10px 3px 10px;
     margin-bottom: 1px;
     color: inherit; }
-  .vocab-list .vocab-hilite {
+  .vocab-tokens-list .vocab-hilite {
     background: rgba(166, 226, 45, 0.2);
     -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.6);
             box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.6);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); }
-  .vocab-list .vocab-selected {
+  .vocab-tokens-list .vocab-selected {
     background: rgba(166, 226, 45, 0.4);
     -webkit-box-shadow: 0px 0px 0px 1px white;
             box-shadow: 0px 0px 0px 1px white;
     text-shadow: 0px 1px 2px black; }
-  .vocab-list :focus {
+  .vocab-tokens-list :focus {
     outline: none; }
-  .vocab-list .vocab-list-subtitle {
+  .vocab-tokens-list .vocab-tokens-list-subtitle {
     font-size: 1.1em;
     font-weight: 600;
     text-transform: lowercase;

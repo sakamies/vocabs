@@ -1,19 +1,18 @@
 <?php
-  //TODO: these are the same as in app.php, remove redundancy and make something something fix optimize
-  $path = '';
-  $vocabsJSON = file_get_contents('vocabs/vocabs.json');
-  $vocabs = json_decode($vocabsJSON,true);
 
-  function echoVocabsList($vocabs) {
+  function echoVocabsLinkList($vocabs) {
     foreach ($vocabs as $vocabName => $vocab) {
       echo '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
       echo '<table class="vocab-links">';
 
       foreach ($vocab as $locale => $translation) {
-        $url = $path . '/' . $vocabName . '/' . $locale;
+        $url = './?name=' . $vocabName . '&lang=' . $locale;
+        //TODO: .htaccess to enable pretty urls
+        //$url = $path . '/' . $vocabName . '/' . $locale;
         $title = $translation['title'];
         $language = $translation['language'];
         echo '<tr>';
+
         echo '<td class="vocab-link-link"><a href="'.$url.'">'.$title.'</a></td>';
         echo '<td class="vocab-link-language">'.$language.'</td>';
 
@@ -30,53 +29,45 @@
     }
   }
 
+  function echoVocabTokensList($vocab) {
+    echo '<ul class="vocab-tokens-list">';
+
+    foreach ($vocab[tokens] as $token) {
+    echo '<li><a class="vocab-token '.$token['name'].'" href="'.$token['url'].'">'.$token['text'].'</a></li>';
+    }
+
+    echo '</ul>';
+  }
+
+
+
+  $vocabs = json_decode(file_get_contents('vocabs/vocabs.json'),true);
+  $github = 'https://github.com/sakamies/vocabs';
+
+  // If there are no vocabName & locale given, output the index list and die
+  $vocabName = filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING);
+  $locale = filter_input(INPUT_GET, 'lang', FILTER_SANITIZE_STRING);
+  if(isset($vocabName) == false && isset($locale) == false){
+     include('list.php');
+     exit();
+  }
+
+
+  // If a vocab name & locale is in the url, make sure they exist in vocabs.json
+  // Should be safe to use vocabName & locale after this
+  $vocabExists = array_key_exists($vocabName, $vocabs);
+  $hasLocale = array_key_exists($locale, $vocabs[$vocabName]);
+  if ($vocabExists == false || $hasLocale == false) {
+    header('HTTP/1.0 404 Not Found');
+    include('error.php');
+    exit();
+  } else {
+    // Ok cool, we have a vocab & locale, time party
+    //Read page title and stuff from vocabs.json according to bundle & locale
+    $vocab = $vocabs[$vocabName][$locale];
+    $title = $vocab['title'];
+    $helpText = $vocab['help-text'];
+    include('app.php');
+  }
+
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>
-    Vocabs
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
-  <link rel="icon" href="/assets/img/vocabs-icon.png">
-  <link href="/assets/css/happy.css" rel="stylesheet">
-  <script src="/assets/lib/jquery-2.0.3.min.js"></script>
-  <script src="/assets/lib/jquery.cookie.js"></script>
-  <script src="/assets/lib/keymaster.js"></script>
-
-  <script src="/assets/js/happy-fun.js"></script>
-
-</head>
-<body class="vocab-index">
-
-  <div class="vocab-help">
-    <h1>Vocabs</h1>
-    <hr>
-
-    <?php echoVocabsList($vocabs); ?>
-
-    <hr>
-    <br>
-    <a href="https://github.com/sakamies/css-vocabulary/issues/new">
-      Report an issue
-    </a>
-    <br>
-    <a href="https://github.com/sakamies/css-vocabulary/fork">
-      Create a vocab or translation
-    </a>
-    <br>
-    <br>
-    <a href="/">
-      Vocabs
-    </a>
-    app by
-    <a href="http://twitter.com/sakamies">
-      @sakamies
-    </a>
-    <br>
-  </div>
-
-</body>
-</html>

@@ -229,10 +229,10 @@ textarea:focus {
 }
 
 
-.vocab-list-header {
+.vocab-tokens-list-header {
   padding: 10px 10px 10px 10px;
 }
-.vocab-list-header:after {
+.vocab-tokens-list-header:after {
   content: '';
   display: block;
   border: 1px solid currentColor;
@@ -252,7 +252,7 @@ textarea:focus {
   box-shadow: 0px 0px 0px 1px white(.5);
 }
 
-.vocab-list {
+.vocab-tokens-list {
   line-height: 1.5em;
   padding: 10px;
 
@@ -279,7 +279,7 @@ textarea:focus {
     :focus {
       outline: none;
     }
-    .vocab-list-subtitle {
+    .vocab-tokens-list-subtitle {
       font-size: 1.1em;
       font-weight: 600;
       text-transform: lowercase;
