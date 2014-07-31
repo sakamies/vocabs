@@ -14,11 +14,11 @@ $hiGreen: hsl(70, 100%, 50%);
   color: inherit;
 }
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   color: #dedede;
-  background: hsl(0, 0%, 20%);
+  background: $dark;
   background-repeat: repeat;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -122,10 +122,11 @@ textarea:focus {
   outline: none;
 }
 
+
 .vocab-index {
   padding: 20px;
   color: #333;
-  background: white(.92);
+  background: $light;
 }
 .vocab-help {
   text-align: center;
@@ -151,6 +152,9 @@ textarea:focus {
     background: #eee;
     box-shadow: 0px 2px 5px black(.6);
     border-radius: 5px;
+  }
+  .vocab-title {
+    margin-bottom: 10px;
   }
 }
 .vocab-help-hide {
@@ -279,7 +283,8 @@ textarea:focus {
     :focus {
       outline: none;
     }
-    .vocab-tokens-list-subtitle {
+    //.i was .vocab-tokens-list-subtitle, but .i sidesteps hacks in js for vocab list subtitles, that long class name looked horrid in the url
+    .i {
       font-size: 1.1em;
       font-weight: 600;
       text-transform: lowercase;
@@ -287,6 +292,18 @@ textarea:focus {
       padding: 3px 10px 3px 10px;
       margin-bottom: 1px;
       color: white(.3);
+    }
+    .i.vocab-hilite {
+      background: none;
+      box-shadow: none;
+      text-shadow: none;
+    }
+    .i.vocab-selected {
+      background: none;
+      box-shadow:
+        inset 5px 0px 0px 0px rgba($green, .4),
+        inset -5px 0px 0px 0px rgba($green, .4);
+      text-shadow: none;
     }
 }
 
