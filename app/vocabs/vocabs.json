@@ -32,7 +32,19 @@
       "specs": {
         "": ""
       }
+    },
+    "es": {
+      "language": "Español",
+      "title": "Vocabulario CSS",
+      "help-text": "Pulsa en el código o en la barra lateral para ver qué es que. Usa el tabulador para navegar con el teclado.",
+      "credits": {
+        "@cfinnberg": "http://twitter.com/cfinnberg"
+      },
+      "specs": {
+        "": ""
+      }
     }
+
   },
   "html": {
     "en": {
@@ -44,6 +56,17 @@
       },
       "specs": {
         "HTML5 Syntax Specification": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+      }
+    },
+    "es": {
+      "language": "Español",
+      "title": "Vocabulario HTML",
+      "help-text": "Pulsa en el código o en la barra lateral para ver qué es que. Usa el tabulador para navegar con el teclado.",
+      "credits": {
+        "@cfinnberg": "http://twitter.com/cfinnberg"
+      },
+      "specs": {
+        "Especificaciones de sintaxis de HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
       }
     }
   }

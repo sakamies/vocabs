@@ -1,0 +1,200 @@
+{
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Comentario",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Declaración",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Conjunto de reglas",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "Regla @",
+      "url": ""
+    },
+    {
+      "name": "at-keyword",
+      "text": "Palabra clave @",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Media query (Requerimiento de medio)",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Lista de media query",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Tipo de medio",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Expresión",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Característica de medio",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Bloque",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Bloque de declaración",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Selector",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Selector simple",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Selector de tipo",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Selector universal",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "Selector de ID",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Selector de clase",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Selector de atributo",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Pseudo-clase",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Pseudo-elemento",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Combinador",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Combinador de descendiente",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Combinador de hijo",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Combinador de hermano adjacente",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "Combinador de hermano general",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Declaración",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Propiedad",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Valor",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Función",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Palabra clave",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "Cadena de texto",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Número",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Porcentaje",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Longitud",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Unidad",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Color",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Prefijo de navegador",
+      "url": ""
+    }
+  ]
+}

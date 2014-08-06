@@ -1,0 +1,104 @@
+{
+  "tokens": [
+    {
+      "name": "i",
+      "text": "Sintaxis",
+      "url": ""
+    },
+    {
+      "name": "doctype",
+      "text": "Tipo de documento (doctype)",
+      "url": ""
+    },
+    {
+      "name": "element",
+      "text": "Elemento",
+      "url": ""
+    },
+    {
+      "name": "tag",
+      "text": "Etiqueta",
+      "url": ""
+    },
+    {
+      "name": "tag-name",
+      "text": "Nombre de etiqueta",
+      "url": ""
+    },
+    {
+      "name": "start-tag",
+      "text": "Etiqueta de comienzo",
+      "url": ""
+    },
+    {
+      "name": "end-tag",
+      "text": "Etiqueta de final",
+      "url": ""
+    },
+    {
+      "name": "attribute",
+      "text": "Atributo",
+      "url": ""
+    },
+    {
+      "name": "attribute-name",
+      "text": "Nombre de atributo",
+      "url": ""
+    },
+    {
+      "name": "attribute-value",
+      "text": "Valor de atributo",
+      "url": ""
+    },
+    {
+      "name": "comment",
+      "text": "Comentario",
+      "url": ""
+    },
+    {
+      "name": "text",
+      "text": "Texto",
+      "url": ""
+    },
+    {
+      "name": "character-reference",
+      "text": "Entidad de carácter",
+      "url": ""
+    },
+    {
+      "name": "i",
+      "text": "Estructura",
+      "url": ""
+    },
+    {
+      "name": "root",
+      "text": "Raiz",
+      "url": ""
+    },
+    {
+      "name": "parent",
+      "text": "Padre",
+      "url": ""
+    },
+    {
+      "name": "children",
+      "text": "Hijos",
+      "url": ""
+    },
+    {
+      "name": "child",
+      "text": "Hijo",
+      "url": ""
+    },
+    {
+      "name": "siblings",
+      "text": "Hermanos",
+      "url": ""
+    },
+    {
+      "name": "sibling",
+      "text": "Hermano",
+      "url": ""
+    }
+  ]
+}
