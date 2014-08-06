@@ -7,9 +7,10 @@
       $html .= '<table class="vocab-links">';
 
       foreach ($vocab as $locale => $translation) {
-        $url = './?name=' . $vocabName . '&lang=' . $locale;
-        //TODO: .htaccess to enable pretty urls
-        //$url = $path . '/' . $vocabName . '/' . $locale;
+        $path = 'http://apps.workflower.fi/vocabs/';
+        //TODO: make a setting to enable/disable pretty urls, to be used if there's a .htaccess file for nice urls
+        //$url = './?name=' . $vocabName . '&lang=' . $locale;
+        $url = $path . $vocabName . '/' . $locale;
         $title = $translation['title'];
         $language = $translation['language'];
         $html .= '<tr>';
