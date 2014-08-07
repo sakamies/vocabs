@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
   <title>
     <?php echo $title ?>
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
+  <link href="assets/img/vocabs-icon.png" rel="icon">
 
-  <link rel="icon" href="img/favicon.png">
   <link href="assets/css/happy.css" rel="stylesheet">
 
   <style id="syntax-style">

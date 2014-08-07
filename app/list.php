@@ -6,15 +6,9 @@
     Vocabs
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
-  <link rel="icon" href="assets/img/vocabs-icon.png">
+  <link href="assets/img/vocabs-icon.png" rel="icon">
 
-  <?php //Include assets in the index already so they'll be cached when the app launches ?>
   <link href="assets/css/happy.css" rel="stylesheet">
-  <script src="assets/lib/jquery-2.0.3.min.js"></script>
-  <script src="assets/lib/jquery.cookie.js"></script>
-  <script src="assets/lib/keymaster.js"></script>
-
-  <script src="assets/js/happy-fun.js"></script>
 
 </head>
 <body class="vocab-index">

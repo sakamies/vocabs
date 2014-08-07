@@ -2,12 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
   <title>
     404 Not found
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
-  <link rel="icon" href="img/favicon.png">
+  <link rel="icon" href="img/vocabs-icon.png">
+
   <link href="assets/css/happy.css" rel="stylesheet">
+
 </head>
 <body class="vocab-index">
   <h2>404 Not Found</h2>
