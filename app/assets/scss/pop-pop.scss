@@ -147,6 +147,10 @@ abbr {
   text-transform: lowercase;
   font-variant: small-caps;
 }
+.language-en .vocab-link-link a {
+  position: relative;
+  top: -0.15em;
+}
 .vocab-link-language {
   color: rgba(#333, .6);
 }
