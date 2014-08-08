@@ -123,11 +123,6 @@ textarea:focus {
 }
 
 
-.vocab-index {
-  padding: 20px;
-  color: #333;
-  background: $light;
-}
 .vocab-help {
   text-align: center;
   width: 430px;
@@ -176,26 +171,6 @@ textarea:focus {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 10px 10px;
-}
-
-.vocab-links {
-  text-align: left;
-  margin: 0 auto 20px auto;
-  border-collapse: collapse;
-
-  td {
-    padding: 4px 5px 5px 5px;
-    border-bottom: 1px solid #ccc;
-  }
-  tr:last-child td {
-    border-bottom: none;
-  }
-}
-.vocab-link-language {
-  color: rgba(#333, .6);
-}
-.vocab-links + .vocab-links-title {
-  margin-top: 10px;
 }
 
 

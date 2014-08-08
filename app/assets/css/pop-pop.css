@@ -1,0 +1,147 @@
+/* UI higlight */
+.vocab-token:focus {
+  outline: none; }
+
+.vocab-hilite {
+  background: rgba(166, 226, 45, 0.07);
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5); }
+
+.vocab-selected {
+  background: rgba(166, 226, 45, 0.16);
+  box-shadow: 0px 0px 0px 1px white; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit; }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  max-width: 760px;
+  margin: 0 auto;
+  color: #333;
+  background: #272822;
+  background-repeat: repeat;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  color: #3c8caf;
+  text-decoration: none; }
+
+a:focus {
+  outline: 1px solid currentColor;
+  outline-offset: 2px; }
+
+[tabindex], button {
+  cursor: pointer; }
+
+h1 {
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 90px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  margin-top: 30px;
+  margin-bottom: 0px; }
+
+h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+h4 {
+  font-size: 17px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 30px; }
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+  opacity: 0.3; }
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+b, strong, em, small, code {
+  line-height: 1; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em; }
+
+sub {
+  top: 0.4em; }
+
+pre, code {
+  font-size: inherit;
+  font-family: monospace; }
+
+abbr {
+  font-variant: small-caps;
+  text-transform: lowercase; }
+
+.vocab-index {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  margin: auto;
+  padding-bottom: 30px;
+  color: #333;
+  background: #f8f8f2; }
+
+.vocab-links {
+  width: 520px;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 30px;
+  border-collapse: collapse; }
+
+.vocab-links tr:last-child td {
+  border-bottom: none; }
+
+.vocab-links .language-en td {
+  vertical-align: bottom;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.15); }
+
+.vocab-link-link {
+  width: 55%; }
+
+.language-en .vocab-link-link {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-variant: small-caps; }
+
+.vocab-link-language {
+  color: rgba(51, 51, 51, 0.6); }

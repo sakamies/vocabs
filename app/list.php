@@ -8,24 +8,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
   <link href="assets/img/vocabs-icon.png" rel="icon">
 
-  <link href="assets/css/happy.css" rel="stylesheet">
+  <!--<link href="assets/css/happy.css" rel="stylesheet">-->
+  <link href="assets/css/pop-pop.css" rel="stylesheet">
 
 </head>
-<body class="vocab-index">
+<body>
 
-  <div class="vocab-help">
-    <h1>Vocabs</h1>
-    <hr>
-    <?php echo vocabsLinkList($vocabs); ?>
-    <hr>
-    <br>
-    <?php echo $reportIssue ?>
-    <br>
-    <?php echo $createVocab ?>
-    <br>
-    <br>
-    <?php echo $appCredits; ?>
-    <br>
+  <div class="vocab-index">
+    <div>
+      <h1 class="vocab-title">
+        Vocabs
+      </h1>
+      <p>by <a href="http://twitter.com/workflower">@workflower</a></p>
+      <br>
+      <?php echo vocabsLinkList($vocabs, $path, $uglyUrls); ?>
+      <br>
+      <?php echo $reportIssue ?>
+      <br>
+      <?php echo $createVocab ?>
+      <br>
+      <br>
+      <br>
+    </div>
   </div>
 
 </body>

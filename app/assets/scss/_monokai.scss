@@ -5,6 +5,12 @@
   @return rgba(255,255,255,$opacity);
 }
 
+//Main color
+$color: #333;
+@function color($opacity) {
+  @return rgba($color, $opacity);
+}
+
 $dark: #272822;
 $light: #f8f8f2;
 $gray: #75715e;

@@ -1,19 +1,21 @@
 <?php
 
-  function vocabsLinkList($vocabs) {
+  function vocabsLinkList($vocabs, $path, $uglyUrls) {
     $html = '';
     foreach ($vocabs as $vocabName => $vocab) {
-      $html .= '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
+      //$html .= '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
       $html .= '<table class="vocab-links">';
 
       foreach ($vocab as $locale => $translation) {
-        $path = 'http://apps.workflower.fi/vocabs/';
-        //TODO: make a setting to enable/disable pretty urls, to be used if there's a .htaccess file for nice urls
-        //$url = './?name=' . $vocabName . '&lang=' . $locale;
-        $url = $path . $vocabName . '/' . $locale;
+        if($uglyUrls == true) {
+          $url = './?name=' . $vocabName . '&lang=' . $locale;
+        } else {
+          $url = $path . $vocabName . '/' . $locale;
+        };
+
         $title = $translation['title'];
         $language = $translation['language'];
-        $html .= '<tr>';
+        $html .= '<tr class="language-'.$locale.'">';
 
         $html .= '<td class="vocab-link-link"><a href="'.$url.'">'.$title.'</a></td>';
         $html .= '<td class="vocab-link-language">'.$language.'</td>';
@@ -25,7 +27,7 @@
         $html .= '</tr>';
       }
 
-      $html .= '</table>';
+      $html .= '</table><br>';
     }
     return $html;
   }
@@ -62,9 +64,24 @@
     return $html;
   }
 
+
+
+
+  // Start the show
+
+  // Use ugly urls for local dev
+  $localhosts = array('localhost', 'voc.dev');
+  $uglyUrls = in_array($_SERVER['HTTP_HOST'], $localhosts);
+  // Find out if ugly, but say if pretty, lifts the mood
+  if ($uglyUrls == true) {
+    $path = '/';
+  } else {
+    $path = 'http://apps.workflower.fi/vocabs/';
+  };
+
   $vocabs = json_decode(file_get_contents('vocabs/vocabs.json'),true);
   $github = 'https://github.com/sakamies/vocabs';
-  $appCredits = 'Vocabs app by <a href="http://twitter.com/workflower">@workflower</a>';
+  $appCredits = '<a href="'.$path.'">Vocabs</a> app by <a href="http://twitter.com/workflower">@workflower</a>';
   $reportIssue = '<a href="'.$github.'/issues/new">Report an issue</a>';
   $createVocab = '<a href="'.$github.'/fork">Create a vocab or translation</a>';
 
