@@ -17,6 +17,7 @@ module.exports = function(grunt) {
       app: {
         files: {
           'app/assets/css/happy.css': 'app/assets/scss/happy.scss',
+          'app/assets/css/pop-pop.css': 'app/assets/scss/pop-pop.scss'
         }
       },
       vocabs: {
