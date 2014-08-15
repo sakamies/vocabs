@@ -46,7 +46,10 @@
         <h1 class="vocab-title">
           <?php echo $title ?>
         </h1>
-        <p class="vocab-credits"><?php echo $credits ?></p>
+        <p class="vocab-credits">
+          <?php echo $language ?>:
+          <?php echo $credits ?>
+        </p>
         <br>
         <p class="vocab-help-text"><?php echo $helpText ?></p>
         <br>
@@ -60,6 +63,7 @@
         <?php echo $createVocab ?>
         <br>
         <br>
+        <a href="<?php echo $path ?>">Vocabs</a> by
         <?php echo $appCredits ?>
         <br>
       </div>

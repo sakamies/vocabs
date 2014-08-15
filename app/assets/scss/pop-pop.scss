@@ -50,11 +50,12 @@ h1 {
   margin-bottom: 0px;
 }
 h2 {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 30px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 60px;
   text-transform: lowercase;
   font-variant: small-caps;
+  text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -119,10 +120,20 @@ abbr {
   color: #333;
   background: $light;
 }
+.vocab-index > div {
+  width: 520px;
+  flex-shrink: 1;
+  margin: auto;
+}
+.vocab-index > div::before {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 .vocab-links {
-  width: 520px;
   text-align: left;
+  width: 520px;
   margin: auto;
   margin-bottom: 30px;
   border-collapse: collapse;
@@ -131,14 +142,12 @@ abbr {
   border-bottom: none;
 }
 
+/*
 .vocab-links .language-en td {
   vertical-align: bottom;
   border-bottom: 1px solid color(.15);
-}
-.vocab-link-link {
-  width: 55%;
-}
-.language-en .vocab-link-link {
+}*/
+/*.language-en .vocab-link-link {
   font-weight: 400;
   font-size: 28px;
   line-height: 30px;
@@ -150,6 +159,9 @@ abbr {
 .language-en .vocab-link-link a {
   position: relative;
   top: -0.15em;
+}*/
+.vocab-link-link {
+  width: 55%;
 }
 .vocab-link-language {
   color: rgba(#333, .6);

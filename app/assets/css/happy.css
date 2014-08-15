@@ -103,7 +103,8 @@ input[type=submit], button {
   -webkit-box-shadow: 0 0 0 1px #3c8caf;
           box-shadow: 0 0 0 1px #3c8caf;
   background: transparent;
-  border-radius: 3px; }
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
 
 select {
   -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
@@ -141,7 +142,8 @@ input:focus, button:focus, select:focus, textarea:focus {
     background: #eee;
     -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
-    border-radius: 5px; }
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
   .vocab-modal .vocab-title {
     margin-bottom: 10px; }
 
@@ -270,4 +272,5 @@ input:focus, button:focus, select:focus, textarea:focus {
   padding: 10px; }
 
 .vocab-token {
-  border-radius: 3px; }
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }

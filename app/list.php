@@ -19,7 +19,7 @@
       <h1 class="vocab-title">
         Vocabs
       </h1>
-      <p>by <a href="http://twitter.com/workflower">@workflower</a></p>
+      <p>by <?php echo $appCredits ?></p>
       <br>
       <?php echo vocabsLinkList($vocabs, $path, $uglyUrls); ?>
       <br>

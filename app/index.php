@@ -3,7 +3,7 @@
   function vocabsLinkList($vocabs, $path, $uglyUrls) {
     $html = '';
     foreach ($vocabs as $vocabName => $vocab) {
-      //$html .= '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
+      $html .= '<h2 class="vocab-links-title" id="' . $vocabName . '-vocabulary">' . $vocabName . '</h2>';
       $html .= '<table class="vocab-links">';
 
       foreach ($vocab as $locale => $translation) {
@@ -81,7 +81,7 @@
 
   $vocabs = json_decode(file_get_contents('vocabs/vocabs.json'),true);
   $github = 'https://github.com/sakamies/vocabs';
-  $appCredits = '<a href="'.$path.'">Vocabs</a> app by <a href="http://twitter.com/workflower">@workflower</a>';
+  $appCredits = '<a href="http://twitter.com/sakamies">@sakamies</a> / <a href="http://twitter.com/workflower">@workflower</a>';
   $reportIssue = '<a href="'.$github.'/issues/new">Report an issue</a>';
   $createVocab = '<a href="'.$github.'/fork">Create a vocab or translation</a>';
 
@@ -107,8 +107,9 @@
     //Read page title and stuff from vocabs.json according to bundle & locale
     $vocab = $vocabs[$vocabName][$locale];
     $title = $vocab['title'];
-    $credits = creditsLinks($vocabs[$vocabName][$locale]['credits']);
-    $specs = specsLinks($vocabs[$vocabName][$locale]['specs']);
+    $language = $vocab['language'];
+    $credits = creditsLinks($vocab['credits']);
+    $specs = specsLinks($vocab['specs']);
     $helpText = $vocab['help-text'];
     include('app.php');
   }
