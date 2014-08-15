@@ -31,6 +31,9 @@ module.exports = function(grunt) {
       }
     },
     autoprefixer: {
+      options: {
+        browsers: ['last 10 versions']
+      },
       app: {
         files: {
           'app/assets/css/happy.css': 'app/assets/css/happy.css'
