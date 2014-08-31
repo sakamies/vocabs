@@ -43,6 +43,17 @@
       "specs": {
         "": ""
       }
+    },
+    "ca": {
+      "language": "Català",
+      "title": "Vocabulari CSS",
+      "help-text": "Sel·lecciona al codo o a la barra lateral per veure qué és que. Fes servir el tabulador per navegar amb el teclat-",
+      "credits": {
+        "@nucliweb": "http://twitter.com/nucliweb"
+      },
+      "specs": {
+        "": ""
+      }
     }
 
   },

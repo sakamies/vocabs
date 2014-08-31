@@ -1,0 +1,200 @@
+{
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Comentari",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Declaració",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Conjunt de regles",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "Regla @",
+      "url": ""
+    },
+    {
+      "name": "at-keyword",
+      "text": "Paraula clau @",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Media query",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Llista de media query",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Tipus de medi",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Expresió",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Característica de medi",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Bloc",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Bloc de declaració",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Selector",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Selector simple",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Selector de tipus",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Selector universal",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "Selector d'ID",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Selector de classe",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Selector d'atribut",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Pseudo-classe",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Pseudo-element",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Combinador",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Combinador de descendent",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Combinador de fill",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Combinador de germà adjacent",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "Combinador de germà general",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Declaració",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Propietat",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Valor",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Funció",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Paraula clau",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "Cadena de text",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Nombre",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Percentatge",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Longitut",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Unitat",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Color",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Prefixe de navegador",
+      "url": ""
+    }
+  ]
+}
