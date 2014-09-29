@@ -1,0 +1,200 @@
+{
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Kommentar",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Anweisung",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Regelsatz",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "@-Regel",
+      "url": ""
+    },
+    {
+      "name": "at-keyword",
+      "text": "@-Schlüsselwort",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Medienabfrage (Media Query)",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Medienabfragen-Liste",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Medientyp",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Ausdruck",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Medienmerkmal",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Block",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Deklarationsblock",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Selektor",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Einfacher Selektor",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Typselektor",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Universalselektor",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "ID-Selektor",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Klassenselektor",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Attributselektor",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Pseudoklasse",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Pseudoelement",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Kombinator",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Nachfahrenselektor",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Kindselektor",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Nachbarselektor",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "Geschwisterselektor",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Deklaration",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Eigenschaft",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Wert",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Funktion",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Schlüsselwort",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "Zeichenkette",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Zahl",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Prozent",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Länge",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Einheit",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Farbe",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Hersteller Präfix",
+      "url": ""
+    }
+  ]
+}

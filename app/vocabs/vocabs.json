@@ -54,8 +54,18 @@
       "specs": {
         "": ""
       }
+    },
+    "de": {
+      "language": "Deutsch",
+      "title": "CSS Vokabular",
+      "help-text": "Klick auf den Code oder die Seitenleiste um zu sehen, was wie heisst. Verwende die Tabulator Taste um mit der Tastatur zu navigieren",
+      "credits": {
+        "@_omat": "http://twitter.com/_omat"
+      },
+      "specs": {
+        "": ""
+      }
     }
-
   },
   "html": {
     "en": {
