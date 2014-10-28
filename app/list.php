@@ -5,7 +5,7 @@
   <title>
     Vocabs
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <link href="assets/img/vocabs-icon.png" rel="icon">
 
   <!--<link href="assets/css/happy.css" rel="stylesheet">-->

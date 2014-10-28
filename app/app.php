@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>
     <?php echo $title ?>
   </title>
