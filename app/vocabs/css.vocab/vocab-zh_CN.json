@@ -1,0 +1,200 @@
+{
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "注释",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "声明",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "规则集",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "@ 规则",
+      "url": ""
+    },
+    {
+      "name": "at-keyword",
+      "text": "@ 关键字",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "媒体查询",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "媒体查询列表(条件)",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "媒体类型",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "表达式",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "媒体特性",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "代码块",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Declaration block",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "选择器",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "简单选择器",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "类型选择器",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "通配符",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "ID选择器",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Class选择器",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "属性选择器",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "伪类",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "伪元素",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Combinator",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "后代选择器",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "子选择器",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "相邻选择器",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "兄弟选择器",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "样式声明",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "属性",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "值",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Function",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "关键字",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "字符串",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "数值",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "百分比",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "尺寸",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "单位",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "颜色",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "厂商前缀",
+      "url": ""
+    }
+  ]
+}
