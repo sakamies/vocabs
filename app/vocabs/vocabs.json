@@ -67,6 +67,17 @@
       }
     }
   },
+  "zh_CN": {
+    "language": "中文简体",
+    "title": "CSS 术语",
+    "help-text": "点击左侧的代码或者侧栏的导航来查看内容，也可通过键盘上的Tab键来切换浏览。",
+    "credits": {
+      "Lyplba": "https://github.com/Lyplba"
+    },
+    "specs": {
+      "": ""
+    }
+  },
   "html": {
     "en": {
       "language": "English",
