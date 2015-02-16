@@ -1,0 +1,200 @@
+{
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Комментарий",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Правило",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Набор правил",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "@-правило",
+      "url": ""
+    },
+    {
+      "name": "at-keyword",
+      "text": "Ключевое слово @-правила",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Медиазапрос",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Список медиатипов",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Медиатип",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Выражение",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Медиафункция",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Блок",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Блок объявлений",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Селектор",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Простой селектор",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Селектор тега",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Универсальный селектор",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "Идентификатор",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Класс",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Селектор атрибута",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Псевдокласс",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Псеводэлемент",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Управляющий символ",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Селектор потомка",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Дочерний селектор",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Соседний селектор",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "Селектор соседних элементов",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Объявление",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Свойство",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Значение",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Функция",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Ключевое слово",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "Строка",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Число",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Процентное значение",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Размер",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Единица измерения",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Цвет",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Вендорный префикс",
+      "url": ""
+    }
+  ]
+}

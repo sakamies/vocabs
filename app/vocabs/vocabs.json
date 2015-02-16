@@ -65,6 +65,17 @@
       "specs": {
         "": ""
       }
+    },
+    "ru": {
+      "language": "Русский",
+      "title": "Словарь CSS",
+      "help-text": "Кликай по коду или по боковой панели, чтобы увидеть что есть что. Используй клавишу Tab для просмотра с помощью клавиатуры.",
+      "credits": {
+        "@meecrobe": "http://twitter.com/meeecrobe"
+      },
+      "specs": {
+        "": ""
+      }
     }
   },
   "html": {
@@ -88,6 +99,17 @@
       },
       "specs": {
         "Especificaciones de sintaxis de HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+      }
+    },
+    "ru": {
+      "language": "Русский",
+      "title": "Словарь HTML",
+      "help-text": "Кликай по коду или по боковой панели, чтобы увидеть что есть что. Используй клавишу Tab для просмотра с помощью клавиатуры.",
+      "credits": {
+        "@meecrobe": "http://twitter.com/meeecrobe"
+      },
+      "specs": {
+        "": ""
       }
     }
   }
