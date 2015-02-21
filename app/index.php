@@ -70,7 +70,7 @@
   // Start the show
 
   // Use ugly urls for local dev
-  $localhosts = array('localhost', 'voc.dev');
+  $localhosts = array('localhost:8000', 'voc.dev');
   $uglyUrls = in_array($_SERVER['HTTP_HOST'], $localhosts);
   // Find out if ugly, but say if pretty, lifts the mood
   if ($uglyUrls == true) {

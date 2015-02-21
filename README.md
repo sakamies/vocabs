@@ -13,7 +13,7 @@ Issues, forks and all manner of feedback welcome! If you improve the code and se
 
 First off, fork the repo. Then copy the template.vocab folder in /vocabs and name it according to the language you'd like to make a vocab for. You can of course host it by yourself, but I would appreciate a pull request for a new vocabulary, so they could all be in the same place.
 
-Run `grunt watch` to get automatic scss & haml parsing and livereload going. You'll need a server with php support to run the app. I've used MAMP so far, so there's no php server in the gruntfile yet.
+Run `grunt watch` to get automatic scss & haml parsing and livereload going. You'll need a server with php to run the app. `php -S localhost:8000` is fine for local development.
 
 ### Vocabulary definition
 
