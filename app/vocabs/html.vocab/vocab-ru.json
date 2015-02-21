@@ -1,0 +1,104 @@
+{
+  "tokens": [
+    {
+      "name": "i",
+      "text": "Синтаксис",
+      "url": ""
+    },
+    {
+      "name": "doctype",
+      "text": "Тип документа",
+      "url": ""
+    },
+    {
+      "name": "element",
+      "text": "Элемент",
+      "url": ""
+    },
+    {
+      "name": "tag",
+      "text": "Тег",
+      "url": ""
+    },
+    {
+      "name": "tag-name",
+      "text": "Имя тега",
+      "url": ""
+    },
+    {
+      "name": "start-tag",
+      "text": "Открывающий тег",
+      "url": ""
+    },
+    {
+      "name": "end-tag",
+      "text": "Закрывающий тег",
+      "url": ""
+    },
+    {
+      "name": "attribute",
+      "text": "Атрибут",
+      "url": ""
+    },
+    {
+      "name": "attribute-name",
+      "text": "Имя атрибута",
+      "url": ""
+    },
+    {
+      "name": "attribute-value",
+      "text": "Значение атрибута",
+      "url": ""
+    },
+    {
+      "name": "comment",
+      "text": "Комментарий",
+      "url": ""
+    },
+    {
+      "name": "text",
+      "text": "Текст",
+      "url": ""
+    },
+    {
+      "name": "character-reference",
+      "text": "Спецсимвол",
+      "url": ""
+    },
+    {
+      "name": "i",
+      "text": "Структура",
+      "url": ""
+    },
+    {
+      "name": "root",
+      "text": "Корень",
+      "url": ""
+    },
+    {
+      "name": "parent",
+      "text": "Родитель",
+      "url": ""
+    },
+    {
+      "name": "children",
+      "text": "Потомки",
+      "url": ""
+    },
+    {
+      "name": "child",
+      "text": "Потомок",
+      "url": ""
+    },
+    {
+      "name": "siblings",
+      "text": "Родственные элементы",
+      "url": ""
+    },
+    {
+      "name": "sibling",
+      "text": "Родственный элемент",
+      "url": ""
+    }
+  ]
+}
