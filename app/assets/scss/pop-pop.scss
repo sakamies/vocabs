@@ -170,8 +170,12 @@ abbr {
 }
 
 @media (max-width: 620px) {
-  .vocab-links,
   .vocab-index > div {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .vocab-links {
     width: auto;
   }
   .vocab-link-link {
