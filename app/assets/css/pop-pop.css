@@ -157,7 +157,17 @@ abbr {
   top: -0.15em;
 }*/
 .vocab-link-link {
-  width: 55%; }
+  width: 55%;
+  padding-right: 15px; }
 
 .vocab-link-language {
+  padding-right: 15px;
   color: rgba(51, 51, 51, 0.6); }
+
+@media (max-width: 620px) {
+  .vocab-links, .vocab-index > div {
+    width: auto; }
+  .vocab-link-link {
+    width: auto; }
+  .vocab-link-language {
+    color: rgba(51, 51, 51, 0.6); } }
