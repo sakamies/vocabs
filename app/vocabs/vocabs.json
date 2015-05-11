@@ -131,7 +131,7 @@
         "@li-xinyang": "https://github.com/li-xinyang"
       },
       "specs": {
-        "Спецификация синтаксиса HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "HTML5 句法标准规格": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
       }
     }
   }
