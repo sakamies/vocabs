@@ -1,0 +1,104 @@
+{
+  "tokens": [
+    {
+      "name": "i",
+      "text": "句法",
+      "url": ""
+    },
+    {
+      "name": "doctype",
+      "text": "文本类型",
+      "url": ""
+    },
+    {
+      "name": "element",
+      "text": "元素",
+      "url": ""
+    },
+    {
+      "name": "tag",
+      "text": "标签",
+      "url": ""
+    },
+    {
+      "name": "tag-name",
+      "text": "标签名",
+      "url": ""
+    },
+    {
+      "name": "start-tag",
+      "text": "起始标签",
+      "url": ""
+    },
+    {
+      "name": "end-tag",
+      "text": "结束标签",
+      "url": ""
+    },
+    {
+      "name": "attribute",
+      "text": "属性",
+      "url": ""
+    },
+    {
+      "name": "attribute-name",
+      "text": "属性名",
+      "url": ""
+    },
+    {
+      "name": "attribute-value",
+      "text": "属性值",
+      "url": ""
+    },
+    {
+      "name": "comment",
+      "text": "注解",
+      "url": ""
+    },
+    {
+      "name": "text",
+      "text": "文本",
+      "url": ""
+    },
+    {
+      "name": "character-reference",
+      "text": "字符引用",
+      "url": ""
+    },
+    {
+      "name": "i",
+      "text": "结构化的标记",
+      "url": ""
+    },
+    {
+      "name": "root",
+      "text": "根",
+      "url": ""
+    },
+    {
+      "name": "parent",
+      "text": "父（节点）",
+      "url": ""
+    },
+    {
+      "name": "children",
+      "text": "子（节点）",
+      "url": ""
+    },
+    {
+      "name": "child",
+      "text": "子（节点）",
+      "url": ""
+    },
+    {
+      "name": "siblings",
+      "text": "同属",
+      "url": ""
+    },
+    {
+      "name": "sibling",
+      "text": "同属",
+      "url": ""
+    }
+  ]
+}
