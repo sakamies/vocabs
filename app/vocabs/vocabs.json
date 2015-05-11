@@ -122,6 +122,17 @@
       "specs": {
         "Спецификация синтаксиса HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
       }
+    },
+    "zh_CN": {
+      "language": "中文简体",
+      "title": "HTML 术语",
+      "help-text": "点击左侧的代码或者侧栏的导航来查看内容，也可通过键盘上的Tab键来切换浏览。",
+      "credits": {
+        "@li-xinyang": "https://github.com/li-xinyang"
+      },
+      "specs": {
+        "HTML5 句法标准规格": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+      }
     }
   }
 }
