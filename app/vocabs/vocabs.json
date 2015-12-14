@@ -133,6 +133,17 @@
       "specs": {
         "HTML5 句法标准规格": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
       }
+    },
+    "id": {
+      "language": "Indonesia",
+      "title": "Kosakata HTML",
+      "help-text": "Klik pada kode atau sidebaruntuk melihat definisinya. Gunakan tombol  Tab untuk melihat dengan menggunakan keyboard.",
+      "credits": {
+        "Tommy Poernomo": "http://tommypoernomo.wordpress.com"
+      },
+      "specs": {
+        "Spesifikasi Syntax HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+      }
     }
   }
 }
