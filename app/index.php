@@ -70,10 +70,10 @@
   // Start the show
 
   // Use ugly urls for local dev
-  $localhosts = array('localhost:8000', 'voc.dev');
+  $localhosts = array('localhost:3000');
   $uglyUrls = in_array($_SERVER['HTTP_HOST'], $localhosts);
-  // Find out if ugly, but say if pretty, lifts the mood
   if ($uglyUrls == true) {
+    //echo '<h1>localhost</h1>';
     $path = '/';
   } else {
     $path = 'http://apps.workflower.fi/vocabs/';
