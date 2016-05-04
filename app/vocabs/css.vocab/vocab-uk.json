@@ -1,0 +1,200 @@
+{
+  "tokens": [
+    {
+      "name": "comment",
+      "text": "Коментар",
+      "url": ""
+    },
+    {
+      "name": "statement",
+      "text": "Правило",
+      "url": ""
+    },
+    {
+      "name": "rule-set",
+      "text": "Набір правил",
+      "url": ""
+    },
+    {
+      "name": "at-rule",
+      "text": "@-правило",
+      "url": ""
+    },
+    {
+      "name": "at-keyword",
+      "text": "Ключовое слово @-правила",
+      "url": ""
+    },
+    {
+      "name": "media-query",
+      "text": "Медіа-запит",
+      "url": ""
+    },
+    {
+      "name": "media-query-list",
+      "text": "Список медіа-типів",
+      "url": ""
+    },
+
+    {
+      "name": "media-type",
+      "text": "Медіа-тип",
+      "url": ""
+    },
+    {
+      "name": "expression",
+      "text": "Вираз",
+      "url": ""
+    },
+    {
+      "name": "media-feature",
+      "text": "Функція медіа",
+      "url": ""
+    },
+    {
+      "name": "block",
+      "text": "Блок",
+      "url": ""
+    },
+    {
+      "name": "declaration-block",
+      "text": "Блок оголошень",
+      "url": ""
+    },
+    {
+      "name": "selector",
+      "text": "Селектор",
+      "url": ""
+    },
+    {
+      "name": "simple-selector",
+      "text": "Простий селектор",
+      "url": ""
+    },
+    {
+      "name": "type-selector",
+      "text": "Селектор тега",
+      "url": ""
+    },
+    {
+      "name": "universal-selector",
+      "text": "Універсальний селектор",
+      "url": ""
+    },
+    {
+      "name": "id-selector",
+      "text": "Ідентифікатор",
+      "url": ""
+    },
+    {
+      "name": "class-selector",
+      "text": "Клас",
+      "url": ""
+    },
+    {
+      "name": "attribute-selector",
+      "text": "Селектор атрибута",
+      "url": ""
+    },
+    {
+      "name": "pseudo-class",
+      "text": "Псевдоклас",
+      "url": ""
+    },
+    {
+      "name": "pseudo-element",
+      "text": "Псевдоелемент",
+      "url": ""
+    },
+    {
+      "name": "combinator",
+      "text": "Керуючий символ",
+      "url": ""
+    },
+    {
+      "name": "descendant-combinator",
+      "text": "Селектор нащадка",
+      "url": ""
+    },
+    {
+      "name": "child-combinator",
+      "text": "Дочірний селектор",
+      "url": ""
+    },
+    {
+      "name": "adjacent-sibling-combinator",
+      "text": "Сусідній селектор",
+      "url": ""
+    },
+    {
+      "name": "general-sibling-combinator",
+      "text": "Селектор сусідніх елементів",
+      "url": ""
+    },
+    {
+      "name": "declaration",
+      "text": "Оголошення",
+      "url": ""
+    },
+    {
+      "name": "property",
+      "text": "Властивість",
+      "url": ""
+    },
+    {
+      "name": "value",
+      "text": "Значення",
+      "url": ""
+    },
+    {
+      "name": "function",
+      "text": "Функція",
+      "url": ""
+    },
+    {
+      "name": "keyword",
+      "text": "Ключове слово",
+      "url": ""
+    },
+    {
+      "name": "string",
+      "text": "Стрічка",
+      "url": ""
+    },
+    {
+      "name": "url",
+      "text": "URL",
+      "url": ""
+    },
+    {
+      "name": "number",
+      "text": "Число",
+      "url": ""
+    },
+    {
+      "name": "percentage",
+      "text": "Відсоткове значення",
+      "url": ""
+    },
+    {
+      "name": "length",
+      "text": "Размір",
+      "url": ""
+    },
+    {
+      "name": "unit",
+      "text": "Одиниця виміру",
+      "url": ""
+    },
+    {
+      "name": "color",
+      "text": "Колір",
+      "url": ""
+    },
+    {
+      "name": "vendor-prefix",
+      "text": "Вендорний префікс",
+      "url": ""
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "tokens": [
+    {
+      "name": "i",
+      "text": "Синтаксис",
+      "url": ""
+    },
+    {
+      "name": "doctype",
+      "text": "Тип документа",
+      "url": ""
+    },
+    {
+      "name": "element",
+      "text": "Елемент",
+      "url": ""
+    },
+    {
+      "name": "tag",
+      "text": "Тег",
+      "url": ""
+    },
+    {
+      "name": "tag-name",
+      "text": "Имя тега",
+      "url": ""
+    },
+    {
+      "name": "start-tag",
+      "text": "Відкриваючий тег",
+      "url": ""
+    },
+    {
+      "name": "end-tag",
+      "text": "Закриваючий тег",
+      "url": ""
+    },
+    {
+      "name": "attribute",
+      "text": "Атрибут",
+      "url": ""
+    },
+    {
+      "name": "attribute-name",
+      "text": "Ім’я атрибута",
+      "url": ""
+    },
+    {
+      "name": "attribute-value",
+      "text": "Значення атрибута",
+      "url": ""
+    },
+    {
+      "name": "comment",
+      "text": "Коментар",
+      "url": ""
+    },
+    {
+      "name": "text",
+      "text": "Текст",
+      "url": ""
+    },
+    {
+      "name": "character-reference",
+      "text": "Спецсимвол",
+      "url": ""
+    },
+    {
+      "name": "i",
+      "text": "Структура",
+      "url": ""
+    },
+    {
+      "name": "root",
+      "text": "Корінь",
+      "url": ""
+    },
+    {
+      "name": "parent",
+      "text": "Батько",
+      "url": ""
+    },
+    {
+      "name": "children",
+      "text": "Нащадки",
+      "url": ""
+    },
+    {
+      "name": "child",
+      "text": "Нащадок",
+      "url": ""
+    },
+    {
+      "name": "siblings",
+      "text": "Споріднені елементи",
+      "url": ""
+    },
+    {
+      "name": "sibling",
+      "text": "Споріднений елемент",
+      "url": ""
+    }
+  ]
+}
