@@ -77,6 +77,17 @@
         "": ""
       }
     },
+    "uk": {
+      "language": "Українська",
+      "title": "Словник CSS",
+      "help-text": "Клацай по коду або по боковій панелі, щоб побачити що є що. Використовуй клавішу Tab для перегляду з допомогою клавіатури.",
+      "credits": {
+        "Ol. Krasnokutskyi": "//alxlark.com"
+      },
+      "specs": {
+        "": ""
+      }
+    },
     "zh_CN": {
       "language": "中文简体",
       "title": "CSS 术语",
@@ -118,6 +129,17 @@
       "help-text": "Кликай по коду или по боковой панели, чтобы увидеть что есть что. Используй клавишу Tab для просмотра с помощью клавиатуры.",
       "credits": {
         "@meecrobe": "http://twitter.com/meeecrobe"
+      },
+      "specs": {
+        "Спецификация синтаксиса HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+      }
+    },
+    "uk": {
+      "language": "Українська",
+      "title": "Словник HTML",
+      "help-text": "Клацай по коду або по боковій панелі, щоб побачити що є що. Використовуй клавішу Tab для перегляду з допомогою клавіатури.",
+      "credits": {
+        "Ol. Krasnokutskyi": "//alxlark.com"
       },
       "specs": {
         "Спецификация синтаксиса HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
