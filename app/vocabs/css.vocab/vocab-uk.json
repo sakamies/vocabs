@@ -2,7 +2,7 @@
   "tokens": [
     {
       "name": "comment",
-      "text": "Комментарий",
+      "text": "Коментар",
       "url": ""
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "rule-set",
-      "text": "Набор правил",
+      "text": "Набір правил",
       "url": ""
     },
     {
@@ -22,33 +22,33 @@
     },
     {
       "name": "at-keyword",
-      "text": "Ключевое слово @-правила",
+      "text": "Ключовое слово @-правила",
       "url": ""
     },
     {
       "name": "media-query",
-      "text": "Медиазапрос",
+      "text": "Медіа-запит",
       "url": ""
     },
     {
       "name": "media-query-list",
-      "text": "Список медиатипов",
+      "text": "Список медіа-типів",
       "url": ""
     },
 
     {
       "name": "media-type",
-      "text": "Медиатип",
+      "text": "Медіа-тип",
       "url": ""
     },
     {
       "name": "expression",
-      "text": "Выражение",
+      "text": "Вираз",
       "url": ""
     },
     {
       "name": "media-feature",
-      "text": "Медиафункция",
+      "text": "Функція медіа",
       "url": ""
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "name": "declaration-block",
-      "text": "Блок объявлений",
+      "text": "Блок оголошень",
       "url": ""
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "name": "simple-selector",
-      "text": "Простой селектор",
+      "text": "Простий селектор",
       "url": ""
     },
     {
@@ -78,17 +78,17 @@
     },
     {
       "name": "universal-selector",
-      "text": "Универсальный селектор",
+      "text": "Універсальний селектор",
       "url": ""
     },
     {
       "name": "id-selector",
-      "text": "Идентификатор",
+      "text": "Ідентифікатор",
       "url": ""
     },
     {
       "name": "class-selector",
-      "text": "Класс",
+      "text": "Клас",
       "url": ""
     },
     {
@@ -98,67 +98,67 @@
     },
     {
       "name": "pseudo-class",
-      "text": "Псевдокласс",
+      "text": "Псевдоклас",
       "url": ""
     },
     {
       "name": "pseudo-element",
-      "text": "Псевдоэлемент",
+      "text": "Псевдоелемент",
       "url": ""
     },
     {
       "name": "combinator",
-      "text": "Управляющий символ",
+      "text": "Керуючий символ",
       "url": ""
     },
     {
       "name": "descendant-combinator",
-      "text": "Селектор потомка",
+      "text": "Селектор нащадка",
       "url": ""
     },
     {
       "name": "child-combinator",
-      "text": "Дочерний селектор",
+      "text": "Дочірний селектор",
       "url": ""
     },
     {
       "name": "adjacent-sibling-combinator",
-      "text": "Соседний селектор",
+      "text": "Сусідній селектор",
       "url": ""
     },
     {
       "name": "general-sibling-combinator",
-      "text": "Селектор соседних элементов",
+      "text": "Селектор сусідніх елементів",
       "url": ""
     },
     {
       "name": "declaration",
-      "text": "Объявление",
+      "text": "Оголошення",
       "url": ""
     },
     {
       "name": "property",
-      "text": "Свойство",
+      "text": "Властивість",
       "url": ""
     },
     {
       "name": "value",
-      "text": "Значение",
+      "text": "Значення",
       "url": ""
     },
     {
       "name": "function",
-      "text": "Функция",
+      "text": "Функція",
       "url": ""
     },
     {
       "name": "keyword",
-      "text": "Ключевое слово",
+      "text": "Ключове слово",
       "url": ""
     },
     {
       "name": "string",
-      "text": "Строка",
+      "text": "Стрічка",
       "url": ""
     },
     {
@@ -173,27 +173,27 @@
     },
     {
       "name": "percentage",
-      "text": "Процентное значение",
+      "text": "Відсоткове значення",
       "url": ""
     },
     {
       "name": "length",
-      "text": "Размер",
+      "text": "Размір",
       "url": ""
     },
     {
       "name": "unit",
-      "text": "Единица измерения",
+      "text": "Одиниця виміру",
       "url": ""
     },
     {
       "name": "color",
-      "text": "Цвет",
+      "text": "Колір",
       "url": ""
     },
     {
       "name": "vendor-prefix",
-      "text": "Вендорный префикс",
+      "text": "Вендорний префікс",
       "url": ""
     }
   ]
