@@ -36,7 +36,7 @@
     $html = '';
     $html .= '<ul class="vocab-tokens-list">';
 
-    foreach ($vocab[tokens] as $token) {
+    foreach ($vocab['tokens'] as $token) {
     $html .= '<li><a class="vocab-token '.$token['name'].'" href="'.$token['url'].'">'.$token['text'].'</a></li>';
     }
 
