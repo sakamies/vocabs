@@ -88,6 +88,17 @@
         "": ""
       }
     }
+        "id": {
+      "language": "Indonesia",
+      "title": "Kosakata CSS",
+      "help-text": "Klik pada kode atau sidebar untuk melihat isinya. Gunakan tombol Tab untuk bernavigasi menggunakan keyboard.",
+      "credits": {
+        "Tommy Poernomo": "http://tommypoernomo.wordpress.com"
+      },
+      "specs": {
+        "": ""
+      }
+    },
   },
   "html": {
     "en": {
@@ -137,12 +148,12 @@
     "id": {
       "language": "Indonesia",
       "title": "Kosakata HTML",
-      "help-text": "Klik pada kode atau sidebaruntuk melihat definisinya. Gunakan tombol  Tab untuk melihat dengan menggunakan keyboard.",
+      "help-text": "Klik pada kode atau sidebar untuk melihat isinya. Gunakan tombol Tab untuk bernavigasi menggunakan keyboard.",
       "credits": {
         "Tommy Poernomo": "http://tommypoernomo.wordpress.com"
       },
       "specs": {
-        "Spesifikasi Syntax HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "Spesifikasi Sintaks HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
       }
     }
   }
