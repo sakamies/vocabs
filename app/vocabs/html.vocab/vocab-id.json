@@ -2,7 +2,7 @@
   "tokens": [
     {
       "name": "i",
-      "text": "Syntax",
+      "text": "Sintaks",
       "url": ""
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "element",
-      "text": "Element",
+      "text": "Elemen",
       "url": ""
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "name": "attribute",
-      "text": "Attribute",
+      "text": "Atribut",
       "url": ""
     },
     {
@@ -62,12 +62,12 @@
     },
     {
       "name": "character-reference",
-      "text": "Character reference",
+      "text": "Karakter khusus",
       "url": ""
     },
     {
       "name": "i",
-      "text": "Structure",
+      "text": "Struktur",
       "url": ""
     },
     {
