@@ -123,6 +123,17 @@
         "HTML5 Syntax Specification": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
       }
     },
+    "fr": {
+      "language": "Français",
+      "title": "Lexique HTML",
+      "help-text": "Cliquez sur le code ou dans le menu sur le côté afin de voir à quoi correspond l'un ou l'autre. Parcourez avec la touche de tabulation.",
+      "credits": {
+        "@ChaxelC": "https://twitter.com/ChaxelC"
+      },
+      "specs": {
+        "Syntaxe de référence HTML5": "http://w3c.github.io/html-reference/syntax.html"
+      }
+    },
     "es": {
       "language": "Español",
       "title": "Vocabulario HTML",
