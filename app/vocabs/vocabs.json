@@ -120,7 +120,7 @@
         "@sakamies": "http://twitter.com/sakamies"
       },
       "specs": {
-        "HTML5 Syntax Specification": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "HTML5 Syntax Specification": "https://w3c.github.io/html/syntax.html#syntax"
       }
     },
     "fr": {
@@ -131,7 +131,7 @@
         "@ChaxelC": "https://twitter.com/ChaxelC"
       },
       "specs": {
-        "Syntaxe de référence HTML5": "http://w3c.github.io/html-reference/syntax.html"
+        "Syntaxe de référence HTML5": "https://w3c.github.io/html/syntax.html#syntax"
       }
     },
     "es": {
@@ -142,7 +142,7 @@
         "@cfinnberg": "http://twitter.com/cfinnberg"
       },
       "specs": {
-        "Especificaciones de sintaxis de HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "Especificaciones de sintaxis de HTML5": "https://w3c.github.io/html/syntax.html#syntax"
       }
     },
     "ru": {
@@ -153,7 +153,7 @@
         "@meecrobe": "http://twitter.com/meeecrobe"
       },
       "specs": {
-        "Спецификация синтаксиса HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "Спецификация синтаксиса HTML5": "https://w3c.github.io/html/syntax.html#syntax"
       }
     },
     "uk": {
@@ -164,7 +164,7 @@
         "Ol. Krasnokutskyi": "//alxlark.com"
       },
       "specs": {
-        "Специфікация синтаксиса HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "Специфікация синтаксиса HTML5": "https://w3c.github.io/html/syntax.html#syntax"
       }
     },
     "zh_CN": {
@@ -175,7 +175,7 @@
         "@li-xinyang": "https://github.com/li-xinyang"
       },
       "specs": {
-        "HTML5 句法标准规格": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "HTML5 句法标准规格": "https://w3c.github.io/html/syntax.html#syntax"
       }
     },
     "id": {
@@ -186,7 +186,7 @@
         "Tommy Poernomo": "http://tommypoernomo.wordpress.com"
       },
       "specs": {
-        "Spesifikasi Sintaks HTML5": "http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+        "Spesifikasi Sintaks HTML5": "https://w3c.github.io/html/syntax.html#syntax"
       }
     }
   }
