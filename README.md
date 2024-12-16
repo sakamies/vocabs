@@ -6,14 +6,9 @@ The purpose of the app is to follow specifications closely, always preferring th
 
 Issues, forks and all manner of feedback welcome! If you improve the code and send a pull request, please try to keep the code boneheadedly simple and understandable.
 
-(For a quick conversation, tweet to [@sakamies](http://twitter.com/sakamies))
-
-
 ## Making new vocabs
 
 First off, fork the repo. Then copy the template.vocab folder in /vocabs and name it according to the language you'd like to make a vocab for. You can of course host it by yourself, but I would appreciate a pull request for a new vocabulary, so they could all be in the same place.
-
-Run `grunt watch` to get automatic scss & haml parsing and livereload going. You'll need a server with php to run the app. `php -S localhost:8000` is fine for local development.
 
 ### Vocabulary definition
 
